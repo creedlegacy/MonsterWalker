@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: dd8e0e26a2572424ab733e406a536a45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -650377292173869679
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_0
+  - first:
+      213: -4739020072751693151
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_1
+  - first:
+      213: -1714075887090686413
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_2
+  - first:
+      213: -2267629636594353829
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_3
+  - first:
+      213: 7192403350202489986
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_4
+  - first:
+      213: -8722532060359236795
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_5
+  - first:
+      213: 5520792816688851725
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_6
+  - first:
+      213: 8850179559230409846
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_7
+  - first:
+      213: 3099871843243591214
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 66
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3d5ab9aefa93741a47ad4bc5ca1d61
+      internalID: -650377292173869679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 66
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268f44dea8793d142941fcaafd534202
+      internalID: -4739020072751693151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 51
+        width: 79
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f13dbc841f1744bb5596f42acb4221
+      internalID: -1714075887090686413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 49
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1374bccdee8cc4fb50a2bb7b11d5e5
+      internalID: -2267629636594353829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 50
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fce9465bce1d84b9876a87afe6c0b3
+      internalID: 7192403350202489986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 50
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84e63416087c9d43bf7e37a0e485e09
+      internalID: -8722532060359236795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 50
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f37f3b712983684ab103a1d3a005eda
+      internalID: 5520792816688851725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_7
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 51
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bc6aa8f0aad9048bec60b8093bf69f
+      internalID: 8850179559230409846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 52
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e8df85750a34442bf294382d307b1c
+      internalID: 3099871843243591214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1074acc761492984ebf37c28f405d2ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

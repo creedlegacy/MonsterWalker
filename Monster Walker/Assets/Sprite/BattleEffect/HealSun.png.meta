@@ -1,0 +1,4203 @@
+fileFormatVersion: 2
+guid: 232000beef2ce184aacf7e3493011089
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3636900024169929489
+    second: 16_sunburn_spritesheet_0
+  - first:
+      213: -7801025535723522783
+    second: 16_sunburn_spritesheet_1
+  - first:
+      213: 929992761325742028
+    second: 16_sunburn_spritesheet_2
+  - first:
+      213: -5407246234350717664
+    second: 16_sunburn_spritesheet_3
+  - first:
+      213: -2654148419914707379
+    second: 16_sunburn_spritesheet_4
+  - first:
+      213: -2228744589622232453
+    second: 16_sunburn_spritesheet_5
+  - first:
+      213: 6263272190325439682
+    second: 16_sunburn_spritesheet_6
+  - first:
+      213: 3735753296659679372
+    second: 16_sunburn_spritesheet_7
+  - first:
+      213: -8310453132643485235
+    second: 16_sunburn_spritesheet_8
+  - first:
+      213: 1407436812790957083
+    second: 16_sunburn_spritesheet_9
+  - first:
+      213: 5753855330253882085
+    second: 16_sunburn_spritesheet_10
+  - first:
+      213: 1765943271687648794
+    second: 16_sunburn_spritesheet_11
+  - first:
+      213: 4039554951370867815
+    second: 16_sunburn_spritesheet_12
+  - first:
+      213: -5573781941526240469
+    second: 16_sunburn_spritesheet_13
+  - first:
+      213: 3438489358563515437
+    second: 16_sunburn_spritesheet_14
+  - first:
+      213: 983870750753396577
+    second: 16_sunburn_spritesheet_15
+  - first:
+      213: 6265798283278840764
+    second: 16_sunburn_spritesheet_16
+  - first:
+      213: 4764206203490849985
+    second: 16_sunburn_spritesheet_17
+  - first:
+      213: 6750589935680655065
+    second: 16_sunburn_spritesheet_18
+  - first:
+      213: 2819493221355987182
+    second: 16_sunburn_spritesheet_19
+  - first:
+      213: -1577169843732162904
+    second: 16_sunburn_spritesheet_20
+  - first:
+      213: 559096768429298963
+    second: 16_sunburn_spritesheet_21
+  - first:
+      213: 7423359587126464373
+    second: 16_sunburn_spritesheet_22
+  - first:
+      213: -3869532909192072933
+    second: 16_sunburn_spritesheet_23
+  - first:
+      213: -4792485684000035400
+    second: 16_sunburn_spritesheet_24
+  - first:
+      213: -2391277357771098244
+    second: 16_sunburn_spritesheet_25
+  - first:
+      213: 6723216669409562616
+    second: 16_sunburn_spritesheet_26
+  - first:
+      213: -3408238494602770409
+    second: 16_sunburn_spritesheet_27
+  - first:
+      213: -8270095943488192715
+    second: 16_sunburn_spritesheet_28
+  - first:
+      213: 6218723282806394756
+    second: 16_sunburn_spritesheet_29
+  - first:
+      213: -1391013807117551562
+    second: 16_sunburn_spritesheet_30
+  - first:
+      213: -1313062158316945709
+    second: 16_sunburn_spritesheet_31
+  - first:
+      213: -3370238458506574945
+    second: 16_sunburn_spritesheet_32
+  - first:
+      213: -3405891168391227487
+    second: 16_sunburn_spritesheet_33
+  - first:
+      213: 2874648784610909869
+    second: 16_sunburn_spritesheet_34
+  - first:
+      213: 2766919344764068492
+    second: 16_sunburn_spritesheet_35
+  - first:
+      213: -7604481204068681643
+    second: 16_sunburn_spritesheet_36
+  - first:
+      213: 8126642164633690539
+    second: 16_sunburn_spritesheet_37
+  - first:
+      213: 5052514067925562059
+    second: 16_sunburn_spritesheet_38
+  - first:
+      213: 73900944802438821
+    second: 16_sunburn_spritesheet_39
+  - first:
+      213: 1292860156061241575
+    second: 16_sunburn_spritesheet_40
+  - first:
+      213: -1644502719512115600
+    second: 16_sunburn_spritesheet_41
+  - first:
+      213: -7476304437819375453
+    second: 16_sunburn_spritesheet_42
+  - first:
+      213: 9020376077729300850
+    second: 16_sunburn_spritesheet_43
+  - first:
+      213: 2067425699724449576
+    second: 16_sunburn_spritesheet_44
+  - first:
+      213: -7571716408800103154
+    second: 16_sunburn_spritesheet_45
+  - first:
+      213: 2688385840614490287
+    second: 16_sunburn_spritesheet_46
+  - first:
+      213: -5682584017595173380
+    second: 16_sunburn_spritesheet_47
+  - first:
+      213: -3161001389483830168
+    second: 16_sunburn_spritesheet_48
+  - first:
+      213: -2830149530689499704
+    second: 16_sunburn_spritesheet_49
+  - first:
+      213: 1812935776265886121
+    second: 16_sunburn_spritesheet_50
+  - first:
+      213: -2754520757361000975
+    second: 16_sunburn_spritesheet_51
+  - first:
+      213: 4652196723891069569
+    second: 16_sunburn_spritesheet_52
+  - first:
+      213: -9189960473933038795
+    second: 16_sunburn_spritesheet_53
+  - first:
+      213: -2497154201582160551
+    second: 16_sunburn_spritesheet_54
+  - first:
+      213: 7326562647693624400
+    second: 16_sunburn_spritesheet_55
+  - first:
+      213: 2911505540911931282
+    second: 16_sunburn_spritesheet_56
+  - first:
+      213: -690644721177463751
+    second: 16_sunburn_spritesheet_57
+  - first:
+      213: 8838842382013582482
+    second: 16_sunburn_spritesheet_58
+  - first:
+      213: 5307238274938574227
+    second: 16_sunburn_spritesheet_59
+  - first:
+      213: -5388409771315575166
+    second: 16_sunburn_spritesheet_60
+  - first:
+      213: -1939731801919907751
+    second: 16_sunburn_spritesheet_61
+  - first:
+      213: -1296328224665941259
+    second: 16_sunburn_spritesheet_62
+  - first:
+      213: 6742614884126944806
+    second: 16_sunburn_spritesheet_63
+  - first:
+      213: -7824056663024893717
+    second: 16_sunburn_spritesheet_64
+  - first:
+      213: 6608104599246327652
+    second: 16_sunburn_spritesheet_65
+  - first:
+      213: 2396728865756858499
+    second: 16_sunburn_spritesheet_66
+  - first:
+      213: -8485301734355767788
+    second: 16_sunburn_spritesheet_67
+  - first:
+      213: 6854567886099486336
+    second: 16_sunburn_spritesheet_68
+  - first:
+      213: -6003871351195527141
+    second: 16_sunburn_spritesheet_69
+  - first:
+      213: -8622469113424142474
+    second: 16_sunburn_spritesheet_70
+  - first:
+      213: -5212098777798200760
+    second: 16_sunburn_spritesheet_71
+  - first:
+      213: 267999178560202338
+    second: 16_sunburn_spritesheet_72
+  - first:
+      213: 5507536236512175664
+    second: 16_sunburn_spritesheet_73
+  - first:
+      213: -7516796277561223481
+    second: 16_sunburn_spritesheet_74
+  - first:
+      213: -6937037990459609291
+    second: 16_sunburn_spritesheet_75
+  - first:
+      213: -3084344750162760958
+    second: 16_sunburn_spritesheet_76
+  - first:
+      213: -4199097133942946481
+    second: 16_sunburn_spritesheet_77
+  - first:
+      213: 6037115261556044818
+    second: 16_sunburn_spritesheet_78
+  - first:
+      213: 3194775282516148682
+    second: 16_sunburn_spritesheet_79
+  - first:
+      213: 5136394178849189928
+    second: 16_sunburn_spritesheet_80
+  - first:
+      213: 2962624279725612897
+    second: 16_sunburn_spritesheet_81
+  - first:
+      213: -7785903233113921601
+    second: 16_sunburn_spritesheet_82
+  - first:
+      213: 7784414662665530386
+    second: 16_sunburn_spritesheet_83
+  - first:
+      213: 6634960520714002538
+    second: 16_sunburn_spritesheet_84
+  - first:
+      213: -7441069889876976748
+    second: 16_sunburn_spritesheet_85
+  - first:
+      213: -5365395336538715058
+    second: 16_sunburn_spritesheet_86
+  - first:
+      213: -9085120908316256531
+    second: 16_sunburn_spritesheet_87
+  - first:
+      213: 2936518382140435207
+    second: 16_sunburn_spritesheet_88
+  - first:
+      213: 4947497772834690138
+    second: 16_sunburn_spritesheet_89
+  - first:
+      213: -7795985403138612414
+    second: 16_sunburn_spritesheet_90
+  - first:
+      213: 864634746575028505
+    second: 16_sunburn_spritesheet_91
+  - first:
+      213: -5187115065845274309
+    second: 16_sunburn_spritesheet_92
+  - first:
+      213: 6267563400358189919
+    second: 16_sunburn_spritesheet_93
+  - first:
+      213: -7119905673699068083
+    second: 16_sunburn_spritesheet_94
+  - first:
+      213: 8272210134289232247
+    second: 16_sunburn_spritesheet_95
+  - first:
+      213: 4710669441614807935
+    second: 16_sunburn_spritesheet_96
+  - first:
+      213: -4685056117186109294
+    second: 16_sunburn_spritesheet_97
+  - first:
+      213: -4555592341076027547
+    second: 16_sunburn_spritesheet_98
+  - first:
+      213: 7122390513307421563
+    second: 16_sunburn_spritesheet_99
+  - first:
+      213: 7280555355214811823
+    second: 16_sunburn_spritesheet_100
+  - first:
+      213: 1041420995571913652
+    second: 16_sunburn_spritesheet_101
+  - first:
+      213: 5919914747880048319
+    second: 16_sunburn_spritesheet_102
+  - first:
+      213: -4582035775714581316
+    second: 16_sunburn_spritesheet_103
+  - first:
+      213: 3865794577474999146
+    second: 16_sunburn_spritesheet_104
+  - first:
+      213: 5301787424992525304
+    second: 16_sunburn_spritesheet_105
+  - first:
+      213: 8254519511559638117
+    second: 16_sunburn_spritesheet_106
+  - first:
+      213: -5313590729360136580
+    second: 16_sunburn_spritesheet_107
+  - first:
+      213: -3136602180837472022
+    second: 16_sunburn_spritesheet_108
+  - first:
+      213: -5026945187936593376
+    second: 16_sunburn_spritesheet_109
+  - first:
+      213: 4828858460384670715
+    second: 16_sunburn_spritesheet_110
+  - first:
+      213: -1221072269900554435
+    second: 16_sunburn_spritesheet_111
+  - first:
+      213: 8298209131213916679
+    second: 16_sunburn_spritesheet_112
+  - first:
+      213: 1309078481131242428
+    second: 16_sunburn_spritesheet_113
+  - first:
+      213: -6429416634301258142
+    second: 16_sunburn_spritesheet_114
+  - first:
+      213: 470459018441084443
+    second: 16_sunburn_spritesheet_115
+  - first:
+      213: 1524995275793959333
+    second: 16_sunburn_spritesheet_116
+  - first:
+      213: -1683655614789743344
+    second: 16_sunburn_spritesheet_117
+  - first:
+      213: 4761221940338318687
+    second: 16_sunburn_spritesheet_118
+  - first:
+      213: 1996954323594154799
+    second: 16_sunburn_spritesheet_119
+  - first:
+      213: 7726484795589840744
+    second: 16_sunburn_spritesheet_120
+  - first:
+      213: 1268813654144173389
+    second: 16_sunburn_spritesheet_121
+  - first:
+      213: -5404911328751606967
+    second: 16_sunburn_spritesheet_122
+  - first:
+      213: 2092403580779257716
+    second: 16_sunburn_spritesheet_123
+  - first:
+      213: -6719384767404610116
+    second: 16_sunburn_spritesheet_124
+  - first:
+      213: -8357026384306125858
+    second: 16_sunburn_spritesheet_125
+  - first:
+      213: -3394036353817260358
+    second: 16_sunburn_spritesheet_126
+  - first:
+      213: -8226569014269958011
+    second: 16_sunburn_spritesheet_127
+  - first:
+      213: 4203994939171252971
+    second: 16_sunburn_spritesheet_128
+  - first:
+      213: 8838949666443808901
+    second: 16_sunburn_spritesheet_129
+  - first:
+      213: 2535814084784171729
+    second: 16_sunburn_spritesheet_130
+  - first:
+      213: 5042950799623544067
+    second: 16_sunburn_spritesheet_131
+  - first:
+      213: -4254025490862985957
+    second: 16_sunburn_spritesheet_132
+  - first:
+      213: 6959727858447570111
+    second: 16_sunburn_spritesheet_133
+  - first:
+      213: 3223636963454188432
+    second: 16_sunburn_spritesheet_134
+  - first:
+      213: -543374162788099352
+    second: 16_sunburn_spritesheet_135
+  - first:
+      213: 2808082524618381335
+    second: 16_sunburn_spritesheet_136
+  - first:
+      213: -7246734359037970940
+    second: 16_sunburn_spritesheet_137
+  - first:
+      213: -978726258069748623
+    second: 16_sunburn_spritesheet_138
+  - first:
+      213: -4573688665986104428
+    second: 16_sunburn_spritesheet_139
+  - first:
+      213: 833487253252807455
+    second: 16_sunburn_spritesheet_140
+  - first:
+      213: 5734864822587632315
+    second: 16_sunburn_spritesheet_141
+  - first:
+      213: 7413391883158104842
+    second: 16_sunburn_spritesheet_142
+  - first:
+      213: -3326394946997854412
+    second: 16_sunburn_spritesheet_143
+  - first:
+      213: 177781396341511500
+    second: 16_sunburn_spritesheet_144
+  - first:
+      213: -8467420076805440324
+    second: 16_sunburn_spritesheet_145
+  - first:
+      213: -107556351313167901
+    second: 16_sunburn_spritesheet_146
+  - first:
+      213: -3378420955594305023
+    second: 16_sunburn_spritesheet_147
+  - first:
+      213: -1407008248352706239
+    second: 16_sunburn_spritesheet_148
+  - first:
+      213: 3190779994974080685
+    second: 16_sunburn_spritesheet_149
+  - first:
+      213: -5552504522972745125
+    second: 16_sunburn_spritesheet_150
+  - first:
+      213: 1328010900319355380
+    second: 16_sunburn_spritesheet_151
+  - first:
+      213: -4199731764830366650
+    second: 16_sunburn_spritesheet_152
+  - first:
+      213: 960273682501954608
+    second: 16_sunburn_spritesheet_153
+  - first:
+      213: 2279974403281486909
+    second: 16_sunburn_spritesheet_154
+  - first:
+      213: 5806800712498168366
+    second: 16_sunburn_spritesheet_155
+  - first:
+      213: 4155538841199131968
+    second: 16_sunburn_spritesheet_156
+  - first:
+      213: 903882593790814409
+    second: 16_sunburn_spritesheet_157
+  - first:
+      213: -6916308861747058056
+    second: 16_sunburn_spritesheet_158
+  - first:
+      213: -8957023877534993797
+    second: 16_sunburn_spritesheet_159
+  - first:
+      213: -1666611962931560788
+    second: 16_sunburn_spritesheet_160
+  - first:
+      213: -6550960155027446947
+    second: 16_sunburn_spritesheet_161
+  - first:
+      213: 1806122842530445991
+    second: 16_sunburn_spritesheet_162
+  - first:
+      213: -6252971743279727646
+    second: 16_sunburn_spritesheet_163
+  - first:
+      213: 1824145771253844070
+    second: 16_sunburn_spritesheet_164
+  - first:
+      213: 8080699015214497787
+    second: 16_sunburn_spritesheet_165
+  - first:
+      213: 1737378170157505672
+    second: 16_sunburn_spritesheet_166
+  - first:
+      213: 994778252097826275
+    second: 16_sunburn_spritesheet_167
+  - first:
+      213: 8487771132752267714
+    second: 16_sunburn_spritesheet_168
+  - first:
+      213: -1407128203723205742
+    second: 16_sunburn_spritesheet_169
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 727
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0233209647bc140bf8359a846ce595
+      internalID: 3636900024169929489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 770
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d387047cde667541a81a06fcbcdaab8
+      internalID: -7801025535723522783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 771
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ef2e27fcbfb1b47b47efc84c133bf7
+      internalID: 929992761325742028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 725
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b612413cbde5840b528d4c131ceab0
+      internalID: -5407246234350717664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 725
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf20f300da3dbd478e7cc93662b6eb2
+      internalID: -2654148419914707379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 724
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cd65e10d5088f4098bd9b25f7069dc
+      internalID: -2228744589622232453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 725
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6928af43d324174aa98976ff0d10ae0
+      internalID: 6263272190325439682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 724
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcb10dbd2b557c49bc15ce2064903c1
+      internalID: 3735753296659679372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 723
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5aa686869f4d44d8158722f4d40a28
+      internalID: -8310453132643485235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 761
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb039ea551a23f4b84ada0b3942ec6d
+      internalID: 1407436812790957083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 726
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e72b454d3ce0004f8cedeacba0bedac
+      internalID: 5753855330253882085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 762
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee157b8a8cf22f4bbf961387f9e7a1f
+      internalID: 1765943271687648794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 756
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f202d7936b3f1e4b866932f087e7a11
+      internalID: 4039554951370867815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 757
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674033dae8d0a444c859bb9d73461d7f
+      internalID: -5573781941526240469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 758
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2b17e499701a44293ade15fa7b7734
+      internalID: 3438489358563515437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 763
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ebab6eec281854a9ff927885a7e8d9
+      internalID: 983870750753396577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 758
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf26f3fba08ac742b5e48412874dd17
+      internalID: 6265798283278840764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 739
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d625d10af342eff40aa83ffd989b9fa6
+      internalID: 4764206203490849985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 741
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e432a66263a692548aa723286e41f390
+      internalID: 6750589935680655065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 741
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fa35f8e9fbdc5458be006a78ca2afb
+      internalID: 2819493221355987182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 731
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66b05f9dbda9dd4395a24be1075f942
+      internalID: -1577169843732162904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 731
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daafc1e674bb314429530b4ceca4786a
+      internalID: 559096768429298963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 724
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0f430f67eac144e8e242ec0f0787bc
+      internalID: 7423359587126464373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 623
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e28a9a77bbda145a8cca74dffdcf88
+      internalID: -3869532909192072933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 666
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ccb62536ce8154d8525bc94ee9a218
+      internalID: -4792485684000035400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 623
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f197a1eaccc852c41886278175242456
+      internalID: -2391277357771098244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 667
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeae3d84e1b738469433514e0b67e79
+      internalID: 6723216669409562616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 623
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750f2a33cc3f6c640ba7af37109f5576
+      internalID: -3408238494602770409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 668
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac70d6eefefe7d7428a8a1ad7cb7a99b
+      internalID: -8270095943488192715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 622
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56054caff8e9a042bfa1271ba5b6a05
+      internalID: 6218723282806394756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 632
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47dde0e91ea506429ab52750722f69b
+      internalID: -1391013807117551562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 666
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b9b511d83474b46ad97fdcc738eb22
+      internalID: -1313062158316945709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 627
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06e7a443cce5914cba50ea6cf78b3b9
+      internalID: -3370238458506574945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 667
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfecc84dbaa53845a8c1d1ec7ddd094
+      internalID: -3405891168391227487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 622
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1519963bd0fe8c4d8a0557ace65439b
+      internalID: 2874648784610909869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 668
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60b1d235b53bcf4884c7813cd1ed1a0
+      internalID: 2766919344764068492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 625
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7347b4a6b40a642beb45a6686a510b
+      internalID: -7604481204068681643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 653
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c97355eb877ebf478f6b7e9083a0593
+      internalID: 8126642164633690539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 660
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1acd030fd09d24d9f1aed18ac5869a
+      internalID: 5052514067925562059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 652
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c009c52af9661b349a79efcdd9b7c330
+      internalID: 73900944802438821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 660
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd67b5a39b4c234da2fe4965a4fb0d1
+      internalID: 1292860156061241575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 661
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a7d7638577863409885d50bd65e78e
+      internalID: -1644502719512115600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 654
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04478f1c43bd4174e83d11a9d8150749
+      internalID: -7476304437819375453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 654
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2e18b059d9f7242a33c1d38f51ae75
+      internalID: 9020376077729300850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 633
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd36ef789c521c740bf362c0e8589933
+      internalID: 2067425699724449576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 633
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f73a14c542cfb746a13656ded535d49
+      internalID: -7571716408800103154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 632
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4595c028838d72d479822c66195add13
+      internalID: 2688385840614490287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 627
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8ea5a3372091f49854c21d8424947e
+      internalID: -5682584017595173380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 621
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2372110437bc607479740f0adc19e11c
+      internalID: -3161001389483830168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 621
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7bdcab60201d8448182fd6775b02a9
+      internalID: -2830149530689499704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 624
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7a038a8f1e7464b8fc1df87941daf0
+      internalID: 1812935776265886121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 524
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a787e8917ca550444a08f2a3abea64d2
+      internalID: -2754520757361000975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 523
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd637baeb941be409519d78dcd69a13
+      internalID: 4652196723891069569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 524
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5182148bf5ddc7440afb6b607f6866cc
+      internalID: -9189960473933038795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 526
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18416f75cbb9d844fb43b66070ed1f2b
+      internalID: -2497154201582160551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 525
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1293ab5ae7e99c54eb443e6ccb461ac7
+      internalID: 7326562647693624400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 568
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a813c1c715ec24ba751536f29bcd29
+      internalID: 2911505540911931282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 524
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d09c6a3c21fe5e4c90ee0edfbecb96e
+      internalID: -690644721177463751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 524
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64403b8d44270674887827543a8b7949
+      internalID: 8838842382013582482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 565
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76de440fc6ff7954e9b46d5374f1810b
+      internalID: 5307238274938574227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 552
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11559be6216b6a442bcf08de9f6f4107
+      internalID: -5388409771315575166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 553
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a231b068ca2f84aaa71ff3934eeb01
+      internalID: -1939731801919907751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 554
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa89ed978cc25ce40a6484449d963899
+      internalID: -1296328224665941259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 554
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cde373713ade744bc3d7a5974e6a65
+      internalID: 6742614884126944806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 523
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f69a9bf60d8ef42b59640f8678752c
+      internalID: -7824056663024893717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 540
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac1909ac13fafb48b6d499c12099fab
+      internalID: 6608104599246327652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 540
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06d59a4e47eb0e499f0167f2472b7f0
+      internalID: 2396728865756858499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 540
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053ac5818fab6584eb6a56525ea06c16
+      internalID: -8485301734355767788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 544
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa4b4a8c1fe8204781e6113fbd1603f
+      internalID: 6854567886099486336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 545
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110d77c00be2ddc4a981a7f215e26463
+      internalID: -6003871351195527141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 530
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9f384f6479fdb46855b71f11391def
+      internalID: -8622469113424142474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 531
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0e17450e0fc4a488f93367f7172646
+      internalID: -5212098777798200760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 425
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a20c6e57c572f49ab94d268cbf0004
+      internalID: 267999178560202338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 466
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58097548919d9724b9f3376e4ca417a4
+      internalID: 5507536236512175664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 424
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643aa429c3839b641b751b8b44fe4d61
+      internalID: -7516796277561223481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 467
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee76e66fc8ad1ac4d974a4e00ceda484
+      internalID: -6937037990459609291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 424
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6eb0800ddc8bd4790ab9c2afa42007
+      internalID: -3084344750162760958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 423
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7e849bcc38dd74c9d7c5b38d17f3cd
+      internalID: -4199097133942946481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 424
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5f75ed7c805de4bbd2a608d4ccf696
+      internalID: 6037115261556044818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 428
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed6aedecacd07549981672cfa3861d4
+      internalID: 3194775282516148682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 423
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1394e3c1c8f66f448af458ec318404b6
+      internalID: 5136394178849189928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 422
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ce4fa16b0ac13469ac5deed4a755b8
+      internalID: 2962624279725612897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 456
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17490a41bd3b86f44bfcab74027996eb
+      internalID: -7785903233113921601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 457
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7ce3215f7478e49b7e97f97893a2ea
+      internalID: 7784414662665530386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 458
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692d6aed94c9c1749a0137fdee73e260
+      internalID: 6634960520714002538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 459
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c64423d10ac7a4abe5cfe4df01ce65
+      internalID: -7441069889876976748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 460
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891b7f26635531747bb9061a8001c214
+      internalID: -5365395336538715058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 460
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8d8e660eb3e134595f4f9a1c271317
+      internalID: -9085120908316256531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 461
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582292736350d0c49bdd6994969ad10f
+      internalID: 2936518382140435207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 440
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d579e0d83a6346459226db55f5bb4de
+      internalID: 4947497772834690138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 441
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbba18f080ea424780300746e7c48b6
+      internalID: -7795985403138612414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 441
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9f7dc7eba267242b0922bce2ec2f29
+      internalID: 864634746575028505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 432
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06b29703eca835498ff71e1a12f8bf0
+      internalID: -5187115065845274309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 432
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affda23ebb28a234884e121a61898799
+      internalID: 6267563400358189919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 432
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4886fcdd549036742b22550cee856d23
+      internalID: -7119905673699068083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 432
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd11c7bd348012746b24f8a693c56b06
+      internalID: 8272210134289232247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 431
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242b5f1b954540242afbe18cc13e8232
+      internalID: 4710669441614807935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 422
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bdf67ebd6cd8648a91d3c589fdcb02
+      internalID: -4685056117186109294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 423
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ddf7f69a3cffd4eac0a5131ac1d91c
+      internalID: -4555592341076027547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 321
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4f304de2ee57e45993fba01db042fe
+      internalID: 7122390513307421563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 321
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deff618219761fe43a9c6210c7e8e140
+      internalID: 7280555355214811823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 324
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2283cabb2ae391b439850c396bba20c2
+      internalID: 1041420995571913652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 324
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f3f8456d0bca34e9aff2642103695e
+      internalID: 5919914747880048319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 331
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4324d17e86cf01d41ae020efa2c0f8bb
+      internalID: -4582035775714581316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 331
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c544e0dd0ed9a4c837ad4eb0083bab
+      internalID: 3865794577474999146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 330
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5816f7c8576244da5bef3b207cab69
+      internalID: 5301787424992525304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 325
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be86d8361f6451c4d840498f792db240
+      internalID: 8254519511559638117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 366
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462d7278e09c1af40a06536ee929ca45
+      internalID: -5313590729360136580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 346
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c4f177d01074d419e2f6c6dcf6aa20
+      internalID: -3136602180837472022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 340
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00616d93ddf96d4289ddf1b41cabcea
+      internalID: -5026945187936593376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 340
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ebf3963da49c348959be6fda0fafc2
+      internalID: 4828858460384670715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 339
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf99f36c9b327045be860045431a89f
+      internalID: -1221072269900554435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 339
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c782abaf435227e4faed9c0b8a40365e
+      internalID: 8298209131213916679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 332
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bac5168b64c9c845a637f3dd0a97fb9
+      internalID: 1309078481131242428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 331
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54951bb40c5ce3a4e9f5a1ca25d48a4d
+      internalID: -6429416634301258142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 331
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574a910706c929742bb46a1b9d22a5da
+      internalID: 470459018441084443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 323
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46442357694427b48b91271ce5b9fada
+      internalID: 1524995275793959333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 326
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519d0e74f70d3ea4497d0a1d30ca5239
+      internalID: -1683655614789743344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 325
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291ca8a3f40d0f84eb337e17894ffb33
+      internalID: 4761221940338318687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 230
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e072befdb1bfd4f95f7ea277ade0fc
+      internalID: 1996954323594154799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 267
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0e8020970a8eb49b9e139cf1e2df5a
+      internalID: 7726484795589840744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 224
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8a2161097f97349b466c4104f3e377
+      internalID: 1268813654144173389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 269
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd42ee34ca700749a02fb74787838e2
+      internalID: -5404911328751606967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 231
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db41dcba874f92b43ae15ecc5f0a10fb
+      internalID: 2092403580779257716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 223
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecafadf5e02221e43a2b6de1d6ff66fc
+      internalID: -6719384767404610116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 230
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0b31d7b41420648a6da37643d7fc95
+      internalID: -8357026384306125858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 230
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cb6f5c051103148897659c0e60ad9e
+      internalID: -3394036353817260358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 230
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4b7a8395a2c934ebc59f76fe15ded1
+      internalID: -8226569014269958011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 227
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7b9388678df3c46bd4f4c7cae5c197
+      internalID: 4203994939171252971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 258
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0baa862e63aa14e9ac0222297cc31b
+      internalID: 8838949666443808901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 224
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f9df1b2d15f7c4fae6fc5be878dbae
+      internalID: 2535814084784171729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 224
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20854515ad03a34e9555b4fbc1c6c7d
+      internalID: 5042950799623544067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 229
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2248f7d8b07190c438b86ca1cbaff518
+      internalID: -4254025490862985957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 223
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2d6be6317df50498c4f8a1bdcf46ff
+      internalID: 6959727858447570111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 228
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62874a8816565df459605ffcf4b42b7c
+      internalID: 3223636963454188432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 227
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eecfe75607ecc54d867eea96ecca08f
+      internalID: -543374162788099352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 126
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183387eb304a54b4daedbc114fc1fb9f
+      internalID: 2808082524618381335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 126
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb3f9bacdf4f6049a92ad56aa2d91c7
+      internalID: -7246734359037970940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 126
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db64706055047b469653ebbb0c5d8ff
+      internalID: -978726258069748623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 125
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58510810e027d2d4fbbe450e107e01b0
+      internalID: -4573688665986104428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 128
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81073ba08d027904c9b6f344f6943c5e
+      internalID: 833487253252807455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 127
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e0b30b8d2df2346ab8983ba215bb1b
+      internalID: 5734864822587632315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 127
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d81eb854f24244a855473871d62d37
+      internalID: 7413391883158104842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 139
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdcdf8129344d9408c88f3bf75858ed
+      internalID: -3326394946997854412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 126
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ef469bf404354a877b20a3c4aa937
+      internalID: 177781396341511500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 139
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dd6b7ba6ed17742a0a6ffda51cb096
+      internalID: -8467420076805440324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 129
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadee065042d5d3468467e44d08a2728
+      internalID: -107556351313167901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 128
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79b2c962c26a874cabda2cd66d42be5
+      internalID: -3378420955594305023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 128
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a430512f33e6543a70b9d588f58a42
+      internalID: -1407008248352706239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 127
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfd084e7c507fa4390fde795b256e31
+      internalID: 3190779994974080685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 128
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40aee4ecb34e1544a8ee6c122c274753
+      internalID: -5552504522972745125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 127
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5691a35eb1c582b4b9d7acc230e9b999
+      internalID: 1328010900319355380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 26
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63304832696532441afec2cd788800e3
+      internalID: -4199731764830366650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 26
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e43029d5d1f2747997c834a1d37225
+      internalID: 960273682501954608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 67
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bf983bfa2728a45af5b42c380045a0
+      internalID: 2279974403281486909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 26
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9109d7ff7214b44aad6db6e79ca0ab6
+      internalID: 5806800712498168366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 68
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f33908bb5b5dcb46b1e2ee735e456d1
+      internalID: 4155538841199131968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 69
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d3dfe02a14b194ea73ff9867cccd70
+      internalID: 903882593790814409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 69
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b706cd24e6c8dfc4f90d0c77e52c9037
+      internalID: -6916308861747058056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 27
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9e6dec54d161248871d00c548e2e51
+      internalID: -8957023877534993797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 70
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d8b9be7dd77ea489141db989f16b20
+      internalID: -1666611962931560788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 60
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fd24e5b619606478a11c532b44a24a
+      internalID: -6550960155027446947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 60
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ad91b527f9d184c8053f0eeb25f7ef
+      internalID: 1806122842530445991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 61
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8af528e2d7588438608c645cf1fb1d
+      internalID: -6252971743279727646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 25
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f559cc342f5be46b796bd735670b36
+      internalID: 1824145771253844070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 61
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b815664b7288e54b8075aca2e1ec198
+      internalID: 8080699015214497787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 39
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c349233b29bd734196f5e8ce657902e
+      internalID: 1737378170157505672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 40
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06100acfb0090b4d9da994786f5485d
+      internalID: 994778252097826275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 40
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2006a9f27309e347941a396b69e8ecb
+      internalID: 8487771132752267714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16_sunburn_spritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 39
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f632a44040f52b548842559e95628e1c
+      internalID: -1407128203723205742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 53b818f096ffda04380a444a0088be17
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 294b69299c54015488af1df7a60a5707
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 160
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lady Radical
+  fontNames:
+  - Lady Radical
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c5e03f5be22ca1b4c84b082a120238ad, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

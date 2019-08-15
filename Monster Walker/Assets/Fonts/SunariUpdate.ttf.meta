@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0b8c40a918e27844a939dd72c435b722
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 160
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sunari
+  fontNames:
+  - Sunari
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e044cdab0b6afc44eb6c24420c3866d7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
