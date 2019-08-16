@@ -3,16 +3,26 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using UnityEngine.SceneManagement;
 
 public class AdMobManager : MonoBehaviour
 {
     private BannerView bannerView;
     private InterstitialAd interAd;
     private RewardBasedVideoAd videoAd;
-    [SerializeField] private string appID = "";
-    [SerializeField] private string bannerID = "";
-    [SerializeField] private string interstitialAdID = "";
-    [SerializeField] private string videoAdID = "";
+    [SerializeField] private string appID = "ca-app-pub-4306238078188379~5897581980";
+
+   
+
+    //real ads
+    //private string bannerID = "ca-app-pub-4306238078188379/2373269949";
+    //private string interstitialAdID = "ca-app-pub-4306238078188379/1463512955";
+    //private string videoAdID = "ca-app-pub-4306238078188379/4806139397";
+
+    //test ads
+    private string bannerID = "ca-app-pub-3940256099942544/6300978111";
+    private string interstitialAdID = "ca-app-pub-3940256099942544/1033173712";
+    private string videoAdID = "ca-app-pub-3940256099942544/5224354917";
 
     private void Awake()
     {
@@ -20,23 +30,28 @@ public class AdMobManager : MonoBehaviour
     }
     private void Start()
     {
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
         this.RequestBanner();
+        
+
+
+
         this.RequestInterstitial();
         this.RequestVideo();
+
+        
     }
+    
 
-    //public void OnClickshowBanner()
-    //{
-    //    this.RequestBanner();
-
-    //}
-    //public void OnClickshowAd()
-    //{
-    //    this.RequestInterstitial();
-    //}
+    
     void RequestBanner()
     {
-        bannerView = new BannerView(bannerID, AdSize.SmartBanner, AdPosition.Bottom);
+        bannerView = new BannerView(bannerID, AdSize.Banner, AdPosition.Top);
+
+        //AdRequest request = new AdRequest.Builder().Build();
         //for testing
         AdRequest request = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
         bannerView.LoadAd(request);
@@ -44,6 +59,8 @@ public class AdMobManager : MonoBehaviour
     void RequestInterstitial()
     {
         interAd = new InterstitialAd(interstitialAdID);
+
+        //AdRequest request = new AdRequest.Builder().Build();
         //for testing
         AdRequest request = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
         interAd.LoadAd(request);
@@ -54,6 +71,7 @@ public class AdMobManager : MonoBehaviour
     {
         videoAd = RewardBasedVideoAd.Instance;
 
+        //AdRequest request = new AdRequest.Builder().Build();
         //for testing
         AdRequest request = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
         videoAd.LoadAd(request,videoAdID);
@@ -81,10 +99,12 @@ public class AdMobManager : MonoBehaviour
 
     }
 
+   
 
     //HANDLE EVENTS
     public void HandleOnAdLoaded(object sender, EventArgs args)
     {
+
         ShowBanner();
     }
 
@@ -110,7 +130,8 @@ public class AdMobManager : MonoBehaviour
 
     void HandleBannerADEvents(bool subscribe)
     {
-        if (subscribe) {
+        if (subscribe)
+        {
             // Called when an ad request has successfully loaded.
             bannerView.OnAdLoaded += HandleOnAdLoaded;
             // Called when an ad request failed to load.
@@ -135,7 +156,7 @@ public class AdMobManager : MonoBehaviour
             // Called when the ad click caused the user to leave the application.
             bannerView.OnAdLeavingApplication -= HandleOnAdLeavingApplication;
         }
-        
+
     }
 
     private void OnEnable()
