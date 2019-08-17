@@ -11,7 +11,12 @@ public class ShopStatus : MonoBehaviour
     [SerializeField] private Text equipName, equipHP, equipSTR, equipSPD, equipPrice;
     private UIManager ui = new UIManager();
     public bool isUnlocked;
-
+    private AudioScript AS;
+    
+    private void Awake()
+    {
+        AS = FindObjectOfType<AudioScript>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +53,7 @@ public class ShopStatus : MonoBehaviour
         equipType = type;
         Unlock = u;
     }
-
+    
     void SetToText()
     {
         equipName.text = e_name;
@@ -139,6 +144,12 @@ public class ShopStatus : MonoBehaviour
         {
             StartCoroutine(WarningText());
         }
+    }
+
+    public void BuySound()
+    {
+        AS.SFXSource.clip = AS.BuySound;
+        AS.SFXSource.Play();
     }
 
     IEnumerator WarningText()

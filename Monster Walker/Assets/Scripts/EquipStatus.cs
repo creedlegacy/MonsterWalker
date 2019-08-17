@@ -12,6 +12,12 @@ public class EquipStatus : MonoBehaviour
     private UIManager ui = new UIManager();
     public bool isEquiped, Equip = false;
     [SerializeField]private string type;
+    private AudioScript AS;
+
+    private void Awake()
+    {
+        AS = FindObjectOfType<AudioScript>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -194,6 +200,12 @@ public class EquipStatus : MonoBehaviour
                 PlayerPrefs.SetInt(e_name, 0);
             }
         }
+    }
+
+    public void EquipSound()
+    {
+        AS.SFXSource.clip = AS.EquipSound;
+        AS.SFXSource.Play();
     }
 
     IEnumerator WarningText() {

@@ -803,6 +803,19 @@ public class UIManager : MonoBehaviour
         AS.SFXSource.Play();
     }
 
+    public void BuySound()
+    {
+        AS.SFXSource.clip = AS.BuySound;
+        AS.SFXSource.Play();
+    }
+
+    public void EquipSound()
+    {
+        AS.SFXSource.clip = AS.EquipSound;
+        AS.SFXSource.Play();
+    }
+
+
     void PlayOP() {
         AS.MusicSource.clip = AS.OpeningMusic;
         AS.MusicSource.Play();
