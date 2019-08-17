@@ -51,51 +51,51 @@ public class PotionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LOWPOTION = ZPlayerPrefs.GetInt("LowPotion", 0);
-        MEDIUMPOTION = ZPlayerPrefs.GetInt("MediumPotion", 0);
-        HIGHPOTION = ZPlayerPrefs.GetInt("HighPotion", 0);
+        LOWPOTION = PlayerPrefs.GetInt("LowPotion", 0);
+        MEDIUMPOTION = PlayerPrefs.GetInt("MediumPotion", 0);
+        HIGHPOTION = PlayerPrefs.GetInt("HighPotion", 0);
 
     }
 
     public void AddLowPot(int amount)
     {
         LOWPOTION += amount;
-        ZPlayerPrefs.SetInt("LowPotion", LOWPOTION);
+        PlayerPrefs.SetInt("LowPotion", LOWPOTION);
         LowPotionUpdated(LOWPOTION);
     }
 
     public void RemoveLowPot(int amount)
     {
         LOWPOTION -= amount;
-        ZPlayerPrefs.SetInt("LowPotion", LOWPOTION);
+        PlayerPrefs.SetInt("LowPotion", LOWPOTION);
         LowPotionUpdated(LOWPOTION);
     }
 
     public void AddMedPot(int amount)
     {
         MEDIUMPOTION += amount;
-        ZPlayerPrefs.SetInt("MedPotion", MEDIUMPOTION);
+        PlayerPrefs.SetInt("MedPotion", MEDIUMPOTION);
         MedPotionUpdated(MEDIUMPOTION);
     }
 
     public void RemoveMedPot(int amount)
     {
         MEDIUMPOTION -= amount;
-        ZPlayerPrefs.SetInt("MedPotion", MEDIUMPOTION);
+        PlayerPrefs.SetInt("MedPotion", MEDIUMPOTION);
         MedPotionUpdated(MEDIUMPOTION);
     }
 
     public void AddHighPot(int amount)
     {
         HIGHPOTION += amount;
-        ZPlayerPrefs.SetInt("HighPotion", HIGHPOTION);
+        PlayerPrefs.SetInt("HighPotion", HIGHPOTION);
         HighPotionUpdated(HIGHPOTION);
     }
 
     public void RemoveHighPot(int amount)
     {
         HIGHPOTION -= amount;
-        ZPlayerPrefs.SetInt("HighPotion", HIGHPOTION);
+        PlayerPrefs.SetInt("HighPotion", HIGHPOTION);
         HighPotionUpdated(HIGHPOTION);
     }
 

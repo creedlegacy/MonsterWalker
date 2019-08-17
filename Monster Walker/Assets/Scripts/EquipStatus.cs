@@ -17,13 +17,13 @@ public class EquipStatus : MonoBehaviour
     void Start()
     {
         ui = FindObjectOfType<UIManager>();
-        ZPlayerPrefs.GetInt(e_name, 0);
-        ZPlayerPrefs.GetInt(e_name + "_e", 0);
+        PlayerPrefs.GetInt(e_name, 0);
+        PlayerPrefs.GetInt(e_name + "_e", 0);
 
-        if (ZPlayerPrefs.GetInt(e_name) == 1)
+        if (PlayerPrefs.GetInt(e_name) == 1)
         { Equip = true; }
 
-        if (Unlock || ZPlayerPrefs.GetInt(e_name + "_s") == 1)
+        if (Unlock || PlayerPrefs.GetInt(e_name + "_s") == 1)
         {
             LockBtn.SetActive(false);
         }
@@ -117,7 +117,7 @@ public class EquipStatus : MonoBehaviour
                     ui.equipStr += e_str;
                     ui.equipSpd += e_spd;
                     ui.SUI.CurWea.sprite = e_sprite.sprite;
-                    ZPlayerPrefs.SetInt(e_name, 1);
+                    PlayerPrefs.SetInt(e_name, 1);
                 }
                 else
                 {
@@ -133,7 +133,7 @@ public class EquipStatus : MonoBehaviour
                     ui.equipStr += e_str;
                     ui.equipSpd += e_spd;
                     ui.SUI.CurArm.sprite = e_sprite.sprite;
-                    ZPlayerPrefs.SetInt(e_name, 1);
+                    PlayerPrefs.SetInt(e_name, 1);
                 }
                 else
                 {
@@ -151,7 +151,7 @@ public class EquipStatus : MonoBehaviour
                     ui.equipStr += e_str;
                     ui.equipSpd += e_spd;
                     ui.SUI.CurAcc.sprite = e_sprite.sprite;
-                    ZPlayerPrefs.SetInt(e_name, 1);
+                    PlayerPrefs.SetInt(e_name, 1);
                 }
                 else
                 {
@@ -171,7 +171,7 @@ public class EquipStatus : MonoBehaviour
                 ui.equipHp -= e_hp;
                 ui.equipStr -= e_str;
                 ui.equipSpd -= e_spd;
-                ZPlayerPrefs.SetInt(e_name, 0);
+                PlayerPrefs.SetInt(e_name, 0);
             }
 
             if (type == "Armor")
@@ -181,7 +181,7 @@ public class EquipStatus : MonoBehaviour
                 ui.equipHp -= e_hp;
                 ui.equipStr -= e_str;
                 ui.equipSpd -= e_spd;
-                ZPlayerPrefs.SetInt(e_name, 0);
+                PlayerPrefs.SetInt(e_name, 0);
             }
 
             if (type == "Accessory")
@@ -191,7 +191,7 @@ public class EquipStatus : MonoBehaviour
                 ui.equipHp -= e_hp;
                 ui.equipStr -= e_str;
                 ui.equipSpd -= e_spd;
-                ZPlayerPrefs.SetInt(e_name, 0);
+                PlayerPrefs.SetInt(e_name, 0);
             }
         }
     }

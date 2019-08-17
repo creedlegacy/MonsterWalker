@@ -81,9 +81,9 @@ public class PotionExploreManager : MonoBehaviour
     }
 
     void RegulateHealthandDead() {
-        if (es.HP > ZPlayerPrefs.GetInt("m_current_hp"))
+        if (es.HP > PlayerPrefs.GetInt("m_current_hp"))
         {
-            es.HP = ZPlayerPrefs.GetInt("m_current_hp");
+            es.HP = PlayerPrefs.GetInt("m_current_hp");
         }
 
         if (es.isDead)

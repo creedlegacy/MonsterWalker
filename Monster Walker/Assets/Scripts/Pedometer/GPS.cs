@@ -12,11 +12,9 @@ public class GPS : MonoBehaviour
     private void Awake()
     {
         
-        ZPlayerPrefs.Initialize("bD9FyEUw6JLB8oxSqx6d", "euszsYgIRuITSnffHjSW"); //password + salt buat encrypt
         instance = this;
         DontDestroyOnLoad(this);
-        //PlayerPrefs.DeleteAll();
-        //ZPlayerPrefs.DeleteAll();
+       // PlayerPrefs.DeleteAll();
         StartCoroutine(WaitLogoAppear());
     }
 

@@ -84,7 +84,7 @@ public class AllItem : MonoBehaviour
                 All_Weapon[i].i_name, All_Weapon[i].i_atk, All_Weapon[i].i_spd, All_Weapon[i].i_hp, All_Weapon[i].i_Sprite, 
                 All_Weapon[i].i_type.ToString());
 
-            if (ZPlayerPrefs.GetInt(All_Weapon[i].i_name) == 1)
+            if (PlayerPrefs.GetInt(All_Weapon[i].i_name) == 1)
             {
                 if (!updStat)
                 {
@@ -116,7 +116,7 @@ public class AllItem : MonoBehaviour
                 All_Armor[i].IsEquiped, All_Armor[i].i_name, All_Armor[i].i_atk, All_Armor[i].i_spd,
                 All_Armor[i].i_hp, All_Armor[i].i_Sprite, All_Armor[i].i_type.ToString());
 
-            if (ZPlayerPrefs.GetInt(All_Armor[i].i_name) == 1)
+            if (PlayerPrefs.GetInt(All_Armor[i].i_name) == 1)
             {
                 if (!updStat)
                 {
@@ -147,7 +147,7 @@ public class AllItem : MonoBehaviour
             pe.transform.localScale = new Vector3(1, 1, 1);
             pe.GetComponent<EquipStatus>().CurrentEquipStatus(All_Acc[i].IsUnlocked, All_Acc[i].IsEquiped, All_Acc[i].i_name, All_Acc[i].i_atk, All_Acc[i].i_spd, All_Acc[i].i_hp, All_Acc[i].i_Sprite, All_Acc[i].i_type.ToString());
 
-            if (ZPlayerPrefs.GetInt(All_Acc[i].i_name) == 1)
+            if (PlayerPrefs.GetInt(All_Acc[i].i_name) == 1)
             {
                 if (!updStat)
                 {
@@ -178,7 +178,7 @@ public class AllItem : MonoBehaviour
             pe.GetComponent<SkillOnStatus>().CurrentSkillStatus(askill.All_Skill[i].IsUnlocked, askill.All_Skill[i].IsEquipped,
                 askill.All_Skill[i].SkillName, askill.All_Skill[i].SkillSprite, askill.All_Skill[i].SkillBio, askill.All_Skill[i].SkillCost, i);
 
-            if (ZPlayerPrefs.GetInt(askill.All_Skill[i].SkillName) == 1)
+            if (PlayerPrefs.GetInt(askill.All_Skill[i].SkillName) == 1)
             {
                 pe.GetComponent<SkillOnStatus>().Equip = true;
                 ui.SUI.CurSkill.sprite = pe.GetComponent<SkillOnStatus>().s_sprite.sprite;
@@ -205,7 +205,7 @@ public class AllItem : MonoBehaviour
             pe.transform.localScale = new Vector3(1, 1, 1);
             pe.GetComponent<ShopStatus>().CurrentShopStatus(All_Weapon[i].IsUnlocked, All_Weapon[i].i_name, All_Weapon[i].i_atk, All_Weapon[i].i_spd, All_Weapon[i].i_hp, All_Weapon[i].i_Sprite, All_Weapon[i].price, All_Weapon[i].i_type.ToString());
 
-            if (ZPlayerPrefs.GetInt(All_Weapon[i].i_name + "_s") == 1)
+            if (PlayerPrefs.GetInt(All_Weapon[i].i_name + "_s") == 1)
             {
                 pe.GetComponent<ShopStatus>().Unlock = true;
             }
@@ -225,7 +225,7 @@ public class AllItem : MonoBehaviour
             pe.transform.localScale = new Vector3(1, 1, 1);
             pe.GetComponent<ShopStatus>().CurrentShopStatus(All_Armor[i].IsUnlocked, All_Armor[i].i_name, All_Armor[i].i_atk, All_Armor[i].i_spd, All_Armor[i].i_hp, All_Armor[i].i_Sprite, All_Armor[i].price, All_Armor[i].i_type.ToString());
 
-            if (ZPlayerPrefs.GetInt(All_Armor[i].i_name + "_s") == 1)
+            if (PlayerPrefs.GetInt(All_Armor[i].i_name + "_s") == 1)
             {
                 pe.GetComponent<ShopStatus>().Unlock = true;
             }
@@ -245,7 +245,7 @@ public class AllItem : MonoBehaviour
             pe.transform.localScale = new Vector3(1, 1, 1);
             pe.GetComponent<ShopStatus>().CurrentShopStatus(All_Acc[i].IsUnlocked, All_Acc[i].i_name, All_Acc[i].i_atk, All_Acc[i].i_spd, All_Acc[i].i_hp, All_Acc[i].i_Sprite, All_Acc[i].price, All_Acc[i].i_type.ToString());
 
-            if (ZPlayerPrefs.GetInt(All_Acc[i].i_name + "_s") == 1)
+            if (PlayerPrefs.GetInt(All_Acc[i].i_name + "_s") == 1)
             {
                 pe.GetComponent<ShopStatus>().Unlock = true;
             }

@@ -16,7 +16,7 @@ public class ShopStatus : MonoBehaviour
     void Start()
     {
         ui = FindObjectOfType<UIManager>();
-        ZPlayerPrefs.GetInt(e_name + "_s", 0);
+        PlayerPrefs.GetInt(e_name + "_s", 0);
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class ShopStatus : MonoBehaviour
         SetToText();
         e_sprite.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
 
-        if (ZPlayerPrefs.GetInt(e_name + "_s") == 1)
+        if (PlayerPrefs.GetInt(e_name + "_s") == 1)
         {
             Unlock = true;
         }
@@ -92,7 +92,7 @@ public class ShopStatus : MonoBehaviour
             AllItem.instance.RemoveCloneStatus();
             AllItem.instance.RemoveCloneStatus();
             GoldManager.instance.RemoveGold(e_price);
-            ZPlayerPrefs.SetInt(e_name + "_s", 1);
+            PlayerPrefs.SetInt(e_name + "_s", 1);
 
             if (equipType == "Weapon")
             {

@@ -55,9 +55,9 @@ public class ExpManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EXPCOST = ZPlayerPrefs.GetInt("expCost", 200);
-        EXP = ZPlayerPrefs.GetInt("m_exp", 0);
-        POINT = ZPlayerPrefs.GetInt("m_lvl_point", 0);
+        EXPCOST = PlayerPrefs.GetInt("expCost", 200);
+        EXP = PlayerPrefs.GetInt("m_exp", 0);
+        POINT = PlayerPrefs.GetInt("m_lvl_point", 0);
     }
 
     // Update is called once per frame
@@ -68,14 +68,14 @@ public class ExpManager : MonoBehaviour
 
     public void AddEXP(int amount) {
         EXP += amount;
-        ZPlayerPrefs.SetInt("m_exp", EXP);
+        PlayerPrefs.SetInt("m_exp", EXP);
         ExpUpdated(EXP);
     }
 
     public void RemoveEXP(int amount)
     {
         EXP -= amount;
-        ZPlayerPrefs.SetInt("m_exp", EXP);
+        PlayerPrefs.SetInt("m_exp", EXP);
         ExpUpdated(EXP);
     }
 
@@ -83,20 +83,20 @@ public class ExpManager : MonoBehaviour
     public void AddPoint(int amount)
     {
         POINT += amount;
-        ZPlayerPrefs.SetInt("m_lvl_point", POINT);
+        PlayerPrefs.SetInt("m_lvl_point", POINT);
         PointUpdated(POINT);
     }
 
     public void RemovePoint(int amount)
     {
         POINT -= amount;
-        ZPlayerPrefs.SetInt("m_lvl_point", POINT);
+        PlayerPrefs.SetInt("m_lvl_point", POINT);
         PointUpdated(POINT);
     }
 
     public void MonLevelUp() {
         EXPCOST += EXPCOST;
-        ZPlayerPrefs.SetInt("expCost", EXPCOST);
+        PlayerPrefs.SetInt("expCost", EXPCOST);
         ExpCostUpdated(EXPCOST);
     }
 

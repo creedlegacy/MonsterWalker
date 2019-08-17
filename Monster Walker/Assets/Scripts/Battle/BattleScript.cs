@@ -72,7 +72,7 @@ public class BattleScript : MonoBehaviour
         MM = FindObjectOfType<MonsterManager>();
         PrepareForEnemy();
         PC.PlayerAnimator = M.An;
-        Debug.Log(ZPlayerPrefs.GetInt("EquipSkillNumber"));
+        Debug.Log(PlayerPrefs.GetInt("EquipSkillNumber"));
         skillPoint = 0;
         skillActivate = false;
     }
@@ -80,14 +80,14 @@ public class BattleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PC.MonHP = ZPlayerPrefs.GetInt("m_current_hp");
-        PC.MonAtk = ZPlayerPrefs.GetInt("m_current_atk");
-        PC.MonSpd = ZPlayerPrefs.GetInt("m_current_spd");
+        PC.MonHP = PlayerPrefs.GetInt("m_current_hp");
+        PC.MonAtk = PlayerPrefs.GetInt("m_current_atk");
+        PC.MonSpd = PlayerPrefs.GetInt("m_current_spd");
         PlayerHPBar.maxValue = PC.MonHP;
         EC.ELvl = EC.EM.EMS.Level;
         EnemyHPBar.maxValue = EC.EHP;
-        PC.SpdMonster = ZPlayerPrefs.GetInt("m_current_spd");
-        skillNumber = ZPlayerPrefs.GetInt("EquipSkillNumber", -1);
+        PC.SpdMonster = PlayerPrefs.GetInt("m_current_spd");
+        skillNumber = PlayerPrefs.GetInt("EquipSkillNumber", -1);
         if (skillNumber >= 0)
         {
             hasSkill = true;
@@ -136,7 +136,7 @@ public class BattleScript : MonoBehaviour
 
         if (hasSkill)
         {
-            tempNum = ZPlayerPrefs.GetInt("EquipSkillNumber");
+            tempNum = PlayerPrefs.GetInt("EquipSkillNumber");
             SkillSprite.sprite = askill.All_Skill[tempNum].SkillSprite;
             SkillName.text = SkillPanelName.text = askill.All_Skill[tempNum].SkillName;
             SkillBar.value = skillPoint;
@@ -302,7 +302,7 @@ public class BattleScript : MonoBehaviour
         EC.MonNum = MM.allMonster[RM].m_num;
         int RN = Random.Range(0, EC.ManyName.Count);
         EC.EM.EMS.NickName = EC.ManyName[RN];
-        int RL = Random.Range(ZPlayerPrefs.GetInt("monLvl") - 2, ZPlayerPrefs.GetInt("monLvl") + 2);
+        int RL = Random.Range(PlayerPrefs.GetInt("monLvl") - 2, PlayerPrefs.GetInt("monLvl") + 2);
         if (RL <= 0)
         {
             RL = 1;
@@ -583,10 +583,10 @@ public class BattleScript : MonoBehaviour
         SkillName.text = "Healing LIght";
         SkillName.color = Color.yellow;
         StartCoroutine(SkillActivate());
-        PC.MonHP += (int)(ZPlayerPrefs.GetInt("m_current_hp") * 0.25);
-        if (PC.MonHP >= ZPlayerPrefs.GetInt("m_current_hp"))
+        PC.MonHP += (int)(PlayerPrefs.GetInt("m_current_hp") * 0.25);
+        if (PC.MonHP >= PlayerPrefs.GetInt("m_current_hp"))
         {
-            PC.MonHP = ZPlayerPrefs.GetInt("m_current_hp");
+            PC.MonHP = PlayerPrefs.GetInt("m_current_hp");
         }
         skillActivate = false;
 

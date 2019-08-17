@@ -32,7 +32,7 @@ public class GoldManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GOLD = ZPlayerPrefs.GetInt("m_gold", 2000);
+        GOLD = PlayerPrefs.GetInt("m_gold", 2000);
     }
 
     // Update is called once per frame
@@ -44,14 +44,14 @@ public class GoldManager : MonoBehaviour
     public void AddGold(int amount)
     {
         GOLD += amount;
-        ZPlayerPrefs.SetInt("m_gold", GOLD);
+        PlayerPrefs.SetInt("m_gold", GOLD);
         GoldUpdated(GOLD);
     }
 
     public void RemoveGold(int amount)
     {
         GOLD -= amount;
-        ZPlayerPrefs.SetInt("m_gold", GOLD);
+        PlayerPrefs.SetInt("m_gold", GOLD);
         GoldUpdated(GOLD);
     }
 }
