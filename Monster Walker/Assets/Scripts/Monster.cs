@@ -34,7 +34,7 @@ public class Monster : MonoBehaviour
     void Start()
     {
 
-        if (ZPlayerPrefs.HasKey("isChosen"))
+        if (PlayerPrefs.HasKey("isChosen"))
         {
             SG = true;
             
@@ -82,20 +82,20 @@ public class Monster : MonoBehaviour
                 }
             }
 
-            OM.NickName = ZPlayerPrefs.GetString("monName");
-            OM.Level = 1; ZPlayerPrefs.SetInt("monLvl", 1);
+            OM.NickName = PlayerPrefs.GetString("monName");
+            OM.Level = 1; PlayerPrefs.SetInt("monLvl", 1);
             OM.Element = MM.allMonster[OM.monster.m_num - 4].Element;
-            OM.hp = OM.monster.m_hp; ZPlayerPrefs.SetInt("monHP", OM.monster.m_hp);
-            OM.atk = OM.monster.m_atk; ZPlayerPrefs.SetInt("monAtk", OM.monster.m_atk);
-            OM.spd = OM.monster.m_spd; ZPlayerPrefs.SetInt("monSpd", OM.monster.m_spd);
-            ZPlayerPrefs.SetInt("isChosen", 0);
+            OM.hp = OM.monster.m_hp; PlayerPrefs.SetInt("monHP", OM.monster.m_hp);
+            OM.atk = OM.monster.m_atk; PlayerPrefs.SetInt("monAtk", OM.monster.m_atk);
+            OM.spd = OM.monster.m_spd; PlayerPrefs.SetInt("monSpd", OM.monster.m_spd);
+            PlayerPrefs.SetInt("isChosen", 0);
         }
 
         //abis pilih monster
         if (SG)
         {
             SG = false;
-            OM.monster = MM.allMonster[ZPlayerPrefs.GetInt("PickMon")];
+            OM.monster = MM.allMonster[PlayerPrefs.GetInt("PickMon")];
             sprite.GetComponent<SpriteRenderer>().sprite = OM.monster.image;
             An.runtimeAnimatorController = OM.monster.spriteAnimation;
             //in game screen
@@ -173,11 +173,11 @@ public class Monster : MonoBehaviour
             }
 
             OM.Element = MM.allMonster[OM.monster.m_num - 4].Element;
-            OM.NickName = ZPlayerPrefs.GetString("monName");
-            OM.Level = ZPlayerPrefs.GetInt("monLvl");
-            OM.hp = ZPlayerPrefs.GetInt("monHP");
-            OM.atk = ZPlayerPrefs.GetInt("monAtk");
-            OM.spd = ZPlayerPrefs.GetInt("monSpd");
+            OM.NickName = PlayerPrefs.GetString("monName");
+            OM.Level = PlayerPrefs.GetInt("monLvl");
+            OM.hp = PlayerPrefs.GetInt("monHP");
+            OM.atk = PlayerPrefs.GetInt("monAtk");
+            OM.spd = PlayerPrefs.GetInt("monSpd");
         }
         #endregion
 

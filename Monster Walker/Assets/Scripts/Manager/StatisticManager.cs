@@ -55,10 +55,10 @@ public class StatisticManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        STEP = ZPlayerPrefs.GetInt("m_step", 0);
-        TOPSTEP = ZPlayerPrefs.GetInt("totalStep", 0);
-        BATTLECOUNTER = ZPlayerPrefs.GetInt("battleCounter", 0);
-        DEATHEXPLORE = ZPlayerPrefs.GetInt("deathExplore", 0);
+        STEP = PlayerPrefs.GetInt("m_step", 0);
+        TOPSTEP = PlayerPrefs.GetInt("totalStep", 0);
+        BATTLECOUNTER = PlayerPrefs.GetInt("battleCounter", 0);
+        DEATHEXPLORE = PlayerPrefs.GetInt("deathExplore", 0);
     }
 
     // Update is called once per frame
@@ -70,15 +70,15 @@ public class StatisticManager : MonoBehaviour
     public void AddStep(int amount)
     {
         STEP += amount;
-        ZPlayerPrefs.SetInt("m_step", STEP);
+        PlayerPrefs.SetInt("m_step", STEP);
         StepUpdated(STEP);
     }
 
     public void BestStep(int amount) {
 
-        if (amount > ZPlayerPrefs.GetInt("totalStep")){
-            ZPlayerPrefs.SetInt("totalStep", amount);
-            TOPSTEP = ZPlayerPrefs.GetInt("totalStep");
+        if (amount > PlayerPrefs.GetInt("totalStep")){
+            PlayerPrefs.SetInt("totalStep", amount);
+            TOPSTEP = PlayerPrefs.GetInt("totalStep");
             TopStepUpdated(TOPSTEP);
         }
     }
@@ -86,14 +86,14 @@ public class StatisticManager : MonoBehaviour
     public void AddBC(int amount)
     {
         BATTLECOUNTER += amount;
-        ZPlayerPrefs.SetInt("battleCounter", BATTLECOUNTER);
+        PlayerPrefs.SetInt("battleCounter", BATTLECOUNTER);
         BattleEncounterUpdated(BATTLECOUNTER);
     }
 
     public void AddDE(int amount)
     {
         DEATHEXPLORE += amount;
-        ZPlayerPrefs.SetInt("deathExplore", DEATHEXPLORE);
+        PlayerPrefs.SetInt("deathExplore", DEATHEXPLORE);
         DeathExploreUpdated(DEATHEXPLORE);
     }
 

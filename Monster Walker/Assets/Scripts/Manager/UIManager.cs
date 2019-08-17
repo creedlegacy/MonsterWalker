@@ -44,6 +44,9 @@ public class UIManager : MonoBehaviour
     
     private StepCounter sc;
 
+    //Tutorial Menu
+    private TutorialManager TM;
+
     //ItemIndication
     [SerializeField]private Text LowPot, MedPot, HighPot, BattleTicket;
 
@@ -85,12 +88,12 @@ public class UIManager : MonoBehaviour
             SUI.pointUsedTotal = SUI.pointUsedHP = SUI.pointUsedSTR = SUI.pointUsedSPD = 0;
 
         AS = FindObjectOfType<AudioScript>();
-
+        TM = FindObjectOfType<TutorialManager>();
         
 
         if (Application.loadedLevelName == "OpeningMenu")
         {
-            IntroAlreadyHappen = ZPlayerPrefs.GetInt("Intro", 0);
+            IntroAlreadyHappen = PlayerPrefs.GetInt("Intro", 0);
             PlayOP();
         }
         else if (Application.loadedLevelName == "GameScreen")
@@ -102,7 +105,7 @@ public class UIManager : MonoBehaviour
         {
             tempPoint = ExpManager.instance.POINT;
 
-            if (!ZPlayerPrefs.HasKey("isChosen"))
+            if (!PlayerPrefs.HasKey("isChosen"))
             {
                 mainCanvas.SetActive(false);
                 PreGame.SetActive(true);
@@ -125,14 +128,14 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AS.MusicSource.volume = ZPlayerPrefs.GetFloat("MusicSetting", 1f);
-        AS.SFXSource.volume = ZPlayerPrefs.GetFloat("SoundSetting", 1f);
+        AS.MusicSource.volume = PlayerPrefs.GetFloat("MusicSetting", 1f);
+        AS.SFXSource.volume = PlayerPrefs.GetFloat("SoundSetting", 1f);
         if (Application.loadedLevelName == "GameScreen")
         {
-            MusicPercentage.text = ((ZPlayerPrefs.GetFloat("MusicSetting") * 100)).ToString("#") + "%";
-            SoundPercentage.text = ((ZPlayerPrefs.GetFloat("SoundSetting") * 100)).ToString("#") + "%";
-            MusicSlider.value = ZPlayerPrefs.GetFloat("MusicSetting", 1f);
-            SFXSlider.value = ZPlayerPrefs.GetFloat("SoundSetting", 1f);
+            MusicPercentage.text = ((PlayerPrefs.GetFloat("MusicSetting") * 100)).ToString("#") + "%";
+            SoundPercentage.text = ((PlayerPrefs.GetFloat("SoundSetting") * 100)).ToString("#") + "%";
+            MusicSlider.value = PlayerPrefs.GetFloat("MusicSetting", 1f);
+            SFXSlider.value = PlayerPrefs.GetFloat("SoundSetting", 1f);
         }
 
     }
@@ -160,9 +163,9 @@ public class UIManager : MonoBehaviour
             playGold.text = GoldManager.instance.GOLD.ToString();
             nickname.text = M.OM.NickName;
             monLevel.text = M.OM.Level.ToString();
-            SUI.NOWHP = ZPlayerPrefs.GetInt("monHP") + equipHp;
-            SUI.NOWSPD = ZPlayerPrefs.GetInt("monSpd") + equipSpd;
-            SUI.NOWSTR = ZPlayerPrefs.GetInt("monAtk") + equipStr;
+            SUI.NOWHP = PlayerPrefs.GetInt("monHP") + equipHp;
+            SUI.NOWSPD = PlayerPrefs.GetInt("monSpd") + equipSpd;
+            SUI.NOWSTR = PlayerPrefs.GetInt("monAtk") + equipStr;
 
             SUI.CurrElement.sprite = M.OM.Element;
 
@@ -220,12 +223,12 @@ public class UIManager : MonoBehaviour
 
             if (MusicSlider.value >= MusicSlider.value || MusicSlider.value <= MusicSlider.value)
             {
-                ZPlayerPrefs.SetFloat("MusicSetting", MusicSlider.value);
+                PlayerPrefs.SetFloat("MusicSetting", MusicSlider.value);
             }
 
             if (SFXSlider.value >= SFXSlider.value || SFXSlider.value <= SFXSlider.value)
             {
-                ZPlayerPrefs.SetFloat("SoundSetting", SFXSlider.value);
+                PlayerPrefs.SetFloat("SoundSetting", SFXSlider.value);
             }
 
             #endregion
@@ -236,7 +239,7 @@ public class UIManager : MonoBehaviour
     #region Choose Starter Button
     public void MonA() {
         M.OM.monster = MM.allMonster[0];
-        ZPlayerPrefs.SetInt("PickMon", 0);
+        PlayerPrefs.SetInt("PickMon", 0);
         tempchose = 0;
         ChooseName();
     }
@@ -244,7 +247,7 @@ public class UIManager : MonoBehaviour
     public void MonB()
     {
         M.OM.monster = MM.allMonster[1];
-        ZPlayerPrefs.SetInt("PickMon", 1);
+        PlayerPrefs.SetInt("PickMon", 1);
         tempchose = 1;
         ChooseName();
     }
@@ -252,7 +255,7 @@ public class UIManager : MonoBehaviour
     public void MonC()
     {
         M.OM.monster = MM.allMonster[2];
-        ZPlayerPrefs.SetInt("PickMon", 2);
+        PlayerPrefs.SetInt("PickMon", 2);
         tempchose = 2;
         ChooseName();
     }
@@ -313,7 +316,7 @@ public class UIManager : MonoBehaviour
     }
 
     public void CancelPick() {
-        ZPlayerPrefs.DeleteKey("PickMon");
+        PlayerPrefs.DeleteKey("PickMon");
         chooseName.text = "";
         chooseMon.SetActive(true);
         inputName.SetActive(false);
@@ -322,10 +325,11 @@ public class UIManager : MonoBehaviour
     public void ClosePreGame() {
         if (chooseName.text.Length >= 3 && chooseName.text.Length <= 8)
         {
-            ZPlayerPrefs.SetString("monName", chooseName.text);
-            ZPlayerPrefs.SetInt("Intro", 1);
+            PlayerPrefs.SetString("monName", chooseName.text);
+            PlayerPrefs.SetInt("Intro", 1);
             mainCanvas.SetActive(true);
             MM.PSG = true;
+            TM.Tutorial.SetActive(true);
             PreGame.SetActive(false);
         }
         else
@@ -464,9 +468,9 @@ public class UIManager : MonoBehaviour
 
     public void ToExplore() {
         PlayExplore();
-        ZPlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
-        ZPlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
-        ZPlayerPrefs.SetInt("m_current_atk", SUI.NOWSTR);
+        PlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
+        PlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
+        PlayerPrefs.SetInt("m_current_atk", SUI.NOWSTR);
         Application.LoadLevel("Explore");
     }
 
@@ -479,17 +483,17 @@ public class UIManager : MonoBehaviour
         {
             PlayBattle();
             TicketManager.instance.RemoveTicket(1);
-            ZPlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
-            ZPlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
-            ZPlayerPrefs.SetInt("m_current_atk", SUI.NOWSTR);
+            PlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
+            PlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
+            PlayerPrefs.SetInt("m_current_atk", SUI.NOWSTR);
             Application.LoadLevel("Battle");
         }
 
         ////for testing purposes
         //PlayBattle();
-        //ZPlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
-        //ZPlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
-        //ZPlayerPrefs.SetInt("m_current_atk", SUI.NOWSTR);
+        //PlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
+        //PlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
+        //PlayerPrefs.SetInt("m_current_atk", SUI.NOWSTR);
         //Application.LoadLevel("Battle");
 
     }
@@ -506,12 +510,12 @@ public class UIManager : MonoBehaviour
     #region Status
 
     void StatusMenu() {
-        SUI.StatHP.text = (ZPlayerPrefs.GetInt("monHP") + equipHp).ToString();
-        SUI.LevelHP.text = ZPlayerPrefs.GetInt("monHP").ToString();
-        SUI.StatSTR.text = (ZPlayerPrefs.GetInt("monAtk") + equipStr).ToString();
-        SUI.LevelSTR.text = ZPlayerPrefs.GetInt("monAtk").ToString();
-        SUI.StatSPD.text = (ZPlayerPrefs.GetInt("monSpd") + equipSpd).ToString();
-        SUI.LevelSPD.text = ZPlayerPrefs.GetInt("monSpd").ToString();
+        SUI.StatHP.text = (PlayerPrefs.GetInt("monHP") + equipHp).ToString();
+        SUI.LevelHP.text = PlayerPrefs.GetInt("monHP").ToString();
+        SUI.StatSTR.text = (PlayerPrefs.GetInt("monAtk") + equipStr).ToString();
+        SUI.LevelSTR.text = PlayerPrefs.GetInt("monAtk").ToString();
+        SUI.StatSPD.text = (PlayerPrefs.GetInt("monSpd") + equipSpd).ToString();
+        SUI.LevelSPD.text = PlayerPrefs.GetInt("monSpd").ToString();
         SUI.totStep.text = StatisticManager.instance.STEP.ToString();
         SUI.besStep.text = StatisticManager.instance.TOPSTEP.ToString();
         SUI.StatPoint.text = tempPoint.ToString();
@@ -542,8 +546,8 @@ public class UIManager : MonoBehaviour
             ExpManager.instance.RemoveEXP(ExpManager.instance.EXPCOST);
             ExpManager.instance.MonLevelUp();
             M.SG = true;
-            int tempLvl = ZPlayerPrefs.GetInt("monLvl") + 1;
-            ZPlayerPrefs.SetInt("monLvl", tempLvl);
+            int tempLvl = PlayerPrefs.GetInt("monLvl") + 1;
+            PlayerPrefs.SetInt("monLvl", tempLvl);
             ExpManager.instance.AddPoint(1);
         }
     }
@@ -648,12 +652,12 @@ public class UIManager : MonoBehaviour
     public void ApplyPoint() {
         ExpManager.instance.RemovePoint(SUI.pointUsedTotal);
         tempPoint = 0;
-        int MonUpHP = ZPlayerPrefs.GetInt("monHP") + SUI.tempHP;
-        ZPlayerPrefs.SetInt("monHP", MonUpHP);
-        int MonUPSTR = ZPlayerPrefs.GetInt("monAtk") + SUI.tempSTR;
-        ZPlayerPrefs.SetInt("monAtk", MonUPSTR);
-        int MonUPSPD = ZPlayerPrefs.GetInt("monSpd") + SUI.tempSPD;
-        ZPlayerPrefs.SetInt("monSpd", MonUPSPD);
+        int MonUpHP = PlayerPrefs.GetInt("monHP") + SUI.tempHP;
+        PlayerPrefs.SetInt("monHP", MonUpHP);
+        int MonUPSTR = PlayerPrefs.GetInt("monAtk") + SUI.tempSTR;
+        PlayerPrefs.SetInt("monAtk", MonUPSTR);
+        int MonUPSPD = PlayerPrefs.GetInt("monSpd") + SUI.tempSPD;
+        PlayerPrefs.SetInt("monSpd", MonUPSPD);
         ResetStatUpdate();        
     }
 

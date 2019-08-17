@@ -37,7 +37,7 @@ namespace PedometerU.Tests {
         private void Start () {
             // Create a new pedometer
             // Reset UI
-            HPBar.maxValue = HP = ZPlayerPrefs.GetInt("m_current_hp");
+            HPBar.maxValue = HP = PlayerPrefs.GetInt("m_current_hp");
             pedometer = new Pedometer(OnStep);
             OnStep(0, 0);
         }
@@ -114,7 +114,7 @@ namespace PedometerU.Tests {
                         //hp monster
                         int randomEnemyHp = Random.Range(10, 7 * M.OM.Level);
 
-                        int EnemyHpLeft = randomEnemyHp - ZPlayerPrefs.GetInt("m_current_atk");
+                        int EnemyHpLeft = randomEnemyHp - PlayerPrefs.GetInt("m_current_atk");
 
                         if (EnemyHpLeft <= 0)
                         {
@@ -123,7 +123,7 @@ namespace PedometerU.Tests {
                         else
                         {
                             float chanceOfDodge = Random.Range(0f, 100f);
-                            float monsterSpd = ZPlayerPrefs.GetInt("m_current_spd") / 2;
+                            float monsterSpd = PlayerPrefs.GetInt("m_current_spd") / 2;
 
                             if (monsterSpd > chanceOfDodge)
                             {

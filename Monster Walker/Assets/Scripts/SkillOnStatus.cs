@@ -17,21 +17,21 @@ public class SkillOnStatus : MonoBehaviour
     void Start()
     {
         ui = FindObjectOfType<UIManager>();
-        ZPlayerPrefs.GetInt(s_name, 0);
-        ZPlayerPrefs.GetInt(s_name + "_e", 0);
+        PlayerPrefs.GetInt(s_name, 0);
+        PlayerPrefs.GetInt(s_name + "_e", 0);
 
-        if (ZPlayerPrefs.GetInt(s_name) == 1)
+        if (PlayerPrefs.GetInt(s_name) == 1)
         {
             Equip = true;
         }
 
-        if (Unlock || ZPlayerPrefs.GetInt(s_name + "_e") == 1)
+        if (Unlock || PlayerPrefs.GetInt(s_name + "_e") == 1)
         {
             LockBtn.SetActive(false);
             CostText.SetActive(false);
         }
 
-        ZPlayerPrefs.GetInt("EquipSkillNumber", -1);
+        PlayerPrefs.GetInt("EquipSkillNumber", -1);
         
     }
 
@@ -83,7 +83,7 @@ public class SkillOnStatus : MonoBehaviour
         if (ExpManager.instance.EXP >= s_cost)
         {
             ExpManager.instance.RemoveEXP(s_cost);
-            ZPlayerPrefs.SetInt(s_name + "_e", 1);
+            PlayerPrefs.SetInt(s_name + "_e", 1);
             LockBtn.SetActive(false);
             CostText.SetActive(false);
             ui.SUI.CurSkill.sprite = s_sprite.sprite;
@@ -104,8 +104,8 @@ public class SkillOnStatus : MonoBehaviour
                 Equip = true;
                 ui.SUI.s_c = 1;
                 ui.SUI.CurSkill.sprite = s_sprite.sprite;
-                ZPlayerPrefs.SetInt("EquipSkillNumber", num);
-                ZPlayerPrefs.SetInt(s_name, 1);
+                PlayerPrefs.SetInt("EquipSkillNumber", num);
+                PlayerPrefs.SetInt(s_name, 1);
             }
             else
             {
@@ -117,8 +117,8 @@ public class SkillOnStatus : MonoBehaviour
         {
             ui.SUI.s_c = 0;
             Equip = false;
-            ZPlayerPrefs.SetInt("EquipSkillNumber", -1);
-            ZPlayerPrefs.SetInt(s_name, 0);
+            PlayerPrefs.SetInt("EquipSkillNumber", -1);
+            PlayerPrefs.SetInt(s_name, 0);
         }
     }
 

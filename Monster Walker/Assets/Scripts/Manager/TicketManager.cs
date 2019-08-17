@@ -33,7 +33,7 @@ public class TicketManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TICKET = ZPlayerPrefs.GetInt("BattleTicket", 3);
+        TICKET = PlayerPrefs.GetInt("BattleTicket", 3);
     }
 
     // Update is called once per frame
@@ -45,14 +45,14 @@ public class TicketManager : MonoBehaviour
     public void AddTicket(int amount)
     {
         TICKET += amount;
-        ZPlayerPrefs.SetInt("BattleTicket", TICKET);
+        PlayerPrefs.SetInt("BattleTicket", TICKET);
         TicketUpdated(TICKET);
     }
 
     public void RemoveTicket(int amount)
     {
         TICKET -= amount;
-        ZPlayerPrefs.SetInt("BattleTicket", TICKET);
+        PlayerPrefs.SetInt("BattleTicket", TICKET);
         TicketUpdated(TICKET);
     }
 

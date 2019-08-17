@@ -40,8 +40,8 @@ public class BattleRecord : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        WIN = ZPlayerPrefs.GetInt("BattleWin", 0);
-        LOSE = ZPlayerPrefs.GetInt("BattleLose", 0);
+        WIN = PlayerPrefs.GetInt("BattleWin", 0);
+        LOSE = PlayerPrefs.GetInt("BattleLose", 0);
     }
 
     // Update is called once per frame
@@ -52,13 +52,13 @@ public class BattleRecord : MonoBehaviour
 
     public void AddWin(int amount) {
         WIN += amount;
-        ZPlayerPrefs.SetInt("BattleWin", WIN);
+        PlayerPrefs.SetInt("BattleWin", WIN);
         WinUpdated(WIN);
     }
 
     public void AddLose(int amount) {
         LOSE += amount;
-        ZPlayerPrefs.SetInt("BattleLose", LOSE);
+        PlayerPrefs.SetInt("BattleLose", LOSE);
         LoseUpdated(LOSE);
     }
 
