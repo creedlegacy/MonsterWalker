@@ -31,10 +31,15 @@ public class AdMobManager : MonoBehaviour
     private void Start()
     {
 
+
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        this.RequestBanner();
+
+
+
+
+        if(sceneName == "OpeningMenu" || sceneName =="StepCounter" || sceneName=="Battle") { this.RequestBanner(); }
         
 
 
@@ -47,18 +52,49 @@ public class AdMobManager : MonoBehaviour
     
 
     
-    void RequestBanner()
+    public void RequestBanner()
     {
+        if (bannerView != null)
+        {
+            bannerView.Destroy();
+        }
         bannerView = new BannerView(bannerID, AdSize.Banner, AdPosition.Top);
+
+        //For Register AD events
+        // Called when an ad request has successfully loaded.
+        bannerView.OnAdLoaded += HandleOnAdLoaded;
+        // Called when an ad request failed to load.
+        bannerView.OnAdFailedToLoad += HandleOnAdFailedToLoad;
+        // Called when an ad is clicked.
+        bannerView.OnAdOpening += HandleOnAdOpened;
+        // Called when the user returned from the app after an ad click.
+        bannerView.OnAdClosed += HandleOnAdClosed;
+        // Called when the ad click caused the user to leave the application.
+        bannerView.OnAdLeavingApplication += HandleOnAdLeavingApplication;
 
         //AdRequest request = new AdRequest.Builder().Build();
         //for testing
         AdRequest request = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
         bannerView.LoadAd(request);
     }
-    void RequestInterstitial()
+    public void RequestInterstitial()
     {
+        if(interAd != null)
+        {
+            interAd.Destroy();
+        }
         interAd = new InterstitialAd(interstitialAdID);
+
+        // Called when an ad request has successfully loaded.
+        interAd.OnAdLoaded += HandleInterstitialLoaded;
+        // Called when an ad request failed to load.
+        interAd.OnAdFailedToLoad += HandleInterstitialFailedToLoad;
+        // Called when an ad is clicked.
+        interAd.OnAdOpening += HandleInterstitialOpened;
+        // Called when the user returned from the app after an ad click.
+        interAd.OnAdClosed += HandleInterstitialClosed;
+        // Called when the ad click caused the user to leave the application.
+        interAd.OnAdLeavingApplication += HandleInterstitialLeftApplication;
 
         //AdRequest request = new AdRequest.Builder().Build();
         //for testing
@@ -67,7 +103,13 @@ public class AdMobManager : MonoBehaviour
         
     }
 
-    void RequestVideo()
+    public void DestroyBanner()
+    {
+        bannerView.Destroy();
+
+    }
+
+    public void RequestVideo()
     {
         videoAd = RewardBasedVideoAd.Instance;
 
@@ -78,10 +120,10 @@ public class AdMobManager : MonoBehaviour
 
     }
 
-    public void ShowBanner()
-    {
-        bannerView.Show();
-    }
+    //public void ShowBanner()
+    //{
+    //    bannerView.Show();
+    //}
     public void ShowInterstitial()
     {
         if (interAd.IsLoaded())
@@ -94,23 +136,25 @@ public class AdMobManager : MonoBehaviour
     {
         if (videoAd.IsLoaded())
         {
-           videoAd.Show();
+            videoAd.Show();
         }
 
     }
 
    
 
+
     //HANDLE EVENTS
+    //BANNER
     public void HandleOnAdLoaded(object sender, EventArgs args)
     {
 
-        ShowBanner();
+        //ShowBanner();
     }
 
     public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
-        RequestBanner();
+        //RequestBanner();
     }
 
     public void HandleOnAdOpened(object sender, EventArgs args)
@@ -128,45 +172,121 @@ public class AdMobManager : MonoBehaviour
         MonoBehaviour.print("HandleAdLeavingApplication event received");
     }
 
-    void HandleBannerADEvents(bool subscribe)
-    {
-        if (subscribe)
-        {
-            // Called when an ad request has successfully loaded.
-            bannerView.OnAdLoaded += HandleOnAdLoaded;
-            // Called when an ad request failed to load.
-            bannerView.OnAdFailedToLoad += HandleOnAdFailedToLoad;
-            // Called when an ad is clicked.
-            bannerView.OnAdOpening += HandleOnAdOpened;
-            // Called when the user returned from the app after an ad click.
-            bannerView.OnAdClosed += HandleOnAdClosed;
-            // Called when the ad click caused the user to leave the application.
-            bannerView.OnAdLeavingApplication += HandleOnAdLeavingApplication;
-        }
-        else
-        {
-            // Called when an ad request has successfully loaded.
-            bannerView.OnAdLoaded -= HandleOnAdLoaded;
-            // Called when an ad request failed to load.
-            bannerView.OnAdFailedToLoad -= HandleOnAdFailedToLoad;
-            // Called when an ad is clicked.
-            bannerView.OnAdOpening -= HandleOnAdOpened;
-            // Called when the user returned from the app after an ad click.
-            bannerView.OnAdClosed -= HandleOnAdClosed;
-            // Called when the ad click caused the user to leave the application.
-            bannerView.OnAdLeavingApplication -= HandleOnAdLeavingApplication;
-        }
+    
 
+    //INTERSTITIAL
+    public void HandleInterstitialLoaded(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleInterstitialLoaded event received");
     }
 
-    private void OnEnable()
+    public void HandleInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
-        HandleBannerADEvents(true);
+        MonoBehaviour.print(
+            "HandleInterstitialFailedToLoad event received with message: " + args.Message);
     }
 
-    private void OnDisable()
+    public void HandleInterstitialOpened(object sender, EventArgs args)
     {
-        HandleBannerADEvents(false);
+        MonoBehaviour.print("HandleInterstitialOpened event received");
     }
+
+    public void HandleInterstitialClosed(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleInterstitialClosed event received");
+    }
+
+    public void HandleInterstitialLeftApplication(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleInterstitialLeftApplication event received");
+    }
+
+
+    
+
+    ////VIDEO
+    //public void HandleRewardBasedVideoLoaded(object sender, EventArgs args)
+    //{
+    //    MonoBehaviour.print("HandleRewardBasedVideoLoaded event received");
+    //}
+
+    //public void HandleRewardBasedVideoFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+    //{
+    //    MonoBehaviour.print(
+    //        "HandleRewardBasedVideoFailedToLoad event received with message: " + args.Message);
+    //}
+
+    //public void HandleRewardBasedVideoOpened(object sender, EventArgs args)
+    //{
+    //    MonoBehaviour.print("HandleRewardBasedVideoOpened event received");
+    //}
+
+    //public void HandleRewardBasedVideoStarted(object sender, EventArgs args)
+    //{
+    //    MonoBehaviour.print("HandleRewardBasedVideoStarted event received");
+    //}
+
+    //public void HandleRewardBasedVideoClosed(object sender, EventArgs args)
+    //{
+    //    MonoBehaviour.print("HandleRewardBasedVideoClosed event received");
+    //}
+
+    //public void HandleRewardBasedVideoRewarded(object sender, Reward args)
+    //{
+    //    string type = args.Type;
+    //    double amount = args.Amount;
+    //    MonoBehaviour.print(
+    //        "HandleRewardBasedVideoRewarded event received for " + amount.ToString() + " " + type);
+    //}
+
+    //public void HandleRewardBasedVideoLeftApplication(object sender, EventArgs args)
+    //{
+    //    MonoBehaviour.print("HandleRewardBasedVideoLeftApplication event received");
+    //}
+
+
+
+
+    //void HandleRewardBasedVideoADEvents(bool subscribe)
+    //{
+    //    if (subscribe)
+    //    {
+    //        // Called when an ad request has successfully loaded.
+    //        videoAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
+    //        // Called when an ad request failed to load.
+    //        videoAd.OnAdFailedToLoad += HandleRewardBasedVideoFailedToLoad;
+    //        // Called when an ad is clicked.
+    //        videoAd.OnAdOpening += HandleRewardBasedVideoOpened;
+    //        //
+    //        videoAd.OnAdStarted += HandleRewardBasedVideoStarted;
+    //        // Called when the user returned from the app after an ad click.
+    //        videoAd.OnAdClosed += HandleRewardBasedVideoClosed;
+    //        //
+    //        videoAd.OnAdRewarded += HandleRewardBasedVideoRewarded;
+    //        // Called when the ad click caused the user to leave the application.
+    //        videoAd.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;
+    //    }
+    //    else
+    //    {
+    //        // Called when an ad request has successfully loaded.
+    //        videoAd.OnAdLoaded -= HandleRewardBasedVideoLoaded;
+    //        // Called when an ad request failed to load.
+    //        videoAd.OnAdFailedToLoad -= HandleRewardBasedVideoFailedToLoad;
+    //        // Called when an ad is clicked.
+    //        videoAd.OnAdOpening -= HandleRewardBasedVideoOpened;
+    //        //
+    //        videoAd.OnAdStarted -= HandleRewardBasedVideoStarted;
+    //        // Called when the user returned from the app after an ad click.
+    //        videoAd.OnAdClosed -= HandleRewardBasedVideoClosed;
+    //        //
+    //        videoAd.OnAdRewarded -= HandleRewardBasedVideoRewarded;
+    //        // Called when the ad click caused the user to leave the application.
+    //        videoAd.OnAdLeavingApplication -= HandleRewardBasedVideoLeftApplication;
+    //    }
+
+    //}
+
+
+
 
 }
