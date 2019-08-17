@@ -6,7 +6,7 @@ public class AudioScript : MonoBehaviour
 {
     public AudioScript instance { get; private set; }
     public AudioSource MusicSource, SFXSource;
-    public AudioClip ButtonSound, LevelUpSound,BuySound,EquipSound,ShopMusic, OpeningMusic, GameScreenMusic, ExploreMusic, BattleMusic, TrainingMusic;
+    public AudioClip ButtonSound, LevelUpSound,BuySound,EquipSkillSound,UseSkillSound,EquipSound,HitSound,ShopMusic, OpeningMusic, GameScreenMusic, ExploreMusic, BattleMusic, TrainingMusic;
 
     private void Awake()
     {

@@ -93,6 +93,7 @@ public class ShopStatus : MonoBehaviour
     public void buyEquip() {
         if (GoldManager.instance.GOLD >= e_price)
         {
+            BuySound();
             AllItem.instance.RemoveCloneStatus();
             AllItem.instance.RemoveCloneStatus();
             AllItem.instance.RemoveCloneStatus();

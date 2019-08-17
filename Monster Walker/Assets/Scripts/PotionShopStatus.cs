@@ -9,7 +9,12 @@ public class PotionShopStatus : MonoBehaviour
     public SpriteRenderer e_sprite;
     [SerializeField] private Text equipName, equipHP, equipPrice;
     private UIManager ui = new UIManager();
+    private AudioScript AS;
 
+    private void Awake()
+    {
+        AS = FindObjectOfType<AudioScript>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +56,7 @@ public class PotionShopStatus : MonoBehaviour
     public void buyPotion() {
         if (GoldManager.instance.GOLD >= e_price)
         {
+            BuySound();
             GoldManager.instance.RemoveGold(e_price);
             if (e_name == "Low Health Potion")
             {
@@ -69,6 +75,12 @@ public class PotionShopStatus : MonoBehaviour
         {
             StartCoroutine(WarningText());
         }
+    }
+
+    public void BuySound()
+    {
+        AS.SFXSource.clip = AS.BuySound;
+        AS.SFXSource.Play();
     }
 
     IEnumerator WarningText()

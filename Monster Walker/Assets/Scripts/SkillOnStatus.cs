@@ -12,6 +12,12 @@ public class SkillOnStatus : MonoBehaviour
     [SerializeField] private Text skillName, skillBio, Cost;
     private UIManager ui = new UIManager();
     public bool isEquiped, Equip = false;
+    private AudioScript AS;
+
+    private void Awake()
+    {
+        AS = FindObjectOfType<AudioScript>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -122,7 +128,13 @@ public class SkillOnStatus : MonoBehaviour
         }
     }
 
-     IEnumerator WarningDisplay() {
+    public void EqupSkillSound()
+    {
+        AS.SFXSource.clip = AS.EquipSkillSound;
+        AS.SFXSource.Play();
+    }
+
+    IEnumerator WarningDisplay() {
         warning.SetActive(true);
         yield return new WaitForSeconds(1f);
         warning.SetActive(false);

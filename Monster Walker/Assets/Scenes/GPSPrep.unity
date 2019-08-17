@@ -380,7 +380,10 @@ MonoBehaviour:
   ButtonSound: {fileID: 8300000, guid: fdaad7c3e466189408a0bbaa962c0a3b, type: 3}
   LevelUpSound: {fileID: 8300000, guid: e12d06f704132a54ca083d8a593c0781, type: 3}
   BuySound: {fileID: 8300000, guid: 8d2dcb89c9a6b1e4285e55c2c81b9fa9, type: 3}
+  EquipSkillSound: {fileID: 8300000, guid: 10048a8e4b569de4bbc231a48ae54c08, type: 3}
+  UseSkillSound: {fileID: 8300000, guid: 99c4546c45ed2454699e9735783013ab, type: 3}
   EquipSound: {fileID: 8300000, guid: c0b134e481fb3854a8622875a925c479, type: 3}
+  HitSound: {fileID: 8300000, guid: b76af3c21597cfd45a76d9c65e895ab5, type: 3}
   ShopMusic: {fileID: 8300000, guid: 3795511041abd054894390215c2f66df, type: 3}
   OpeningMusic: {fileID: 8300000, guid: 31424a0922900cd43a9d75d6f10fdcd9, type: 3}
   GameScreenMusic: {fileID: 8300000, guid: 93ddc883fe3ce2f4bb7d2e18fb79d77d, type: 3}
