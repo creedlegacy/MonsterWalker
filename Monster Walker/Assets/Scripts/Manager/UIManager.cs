@@ -359,7 +359,7 @@ public class UIManager : MonoBehaviour
     public void TrainingVideoAd()
     {
         
-        AdStep = Mathf.RoundToInt(totSteptemp * 1.05f);
+        AdStep = (int)(totSteptemp * 1.5);
         AdstepAddition  = AdStep - totSteptemp;
         AdStepText.text = (AdStep).ToString();
         ExpManager.instance.AddEXP(AdstepAddition);
