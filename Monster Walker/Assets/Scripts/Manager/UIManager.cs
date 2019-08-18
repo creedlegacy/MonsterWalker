@@ -40,8 +40,12 @@ public class UIManager : MonoBehaviour
     public GameObject AruSureTraining;
     private ParallaxBackground pb;
     public GameObject TR;
-    public Text CurStep, BesStep, TotStep, multiplier;
+    public Text CurStep, BesStep, TotStep,AdStepText, multiplier;
     
+    
+    private int totSteptemp,AdStep,AdstepAddition;
+
+
     private StepCounter sc;
 
     //Tutorial Menu
@@ -352,7 +356,22 @@ public class UIManager : MonoBehaviour
         Application.LoadLevel("GameScreen");
     }
 
-    public void FinishTraining() {
+    public void TrainingVideoAd()
+    {
+        
+        AdStep = Mathf.RoundToInt(totSteptemp * 1.05f);
+        AdstepAddition  = AdStep - totSteptemp;
+        AdStepText.text = (AdStep).ToString();
+        ExpManager.instance.AddEXP(AdstepAddition);
+
+    }
+
+
+    public void FinishTraining()
+    {
+
+
+
         sc.pedometer.Dispose();
         sc.pedometer = null;
         M.An.SetBool("IsWalking", false);
@@ -360,12 +379,16 @@ public class UIManager : MonoBehaviour
         TR.SetActive(true);
         StatisticManager.instance.AddStep(sc.step1);
         StatisticManager.instance.BestStep(sc.step1);
-        multiplier.text = "x " + sc.multiplier.ToString("#.#"); 
+        multiplier.text = "x " + sc.multiplier.ToString("#.#");
         CurStep.text = sc.step1.ToString();
         BesStep.text = StatisticManager.instance.TOPSTEP.ToString();
-        int totSteptemp = Mathf.RoundToInt(sc.step1 * sc.multiplier);
-        TotStep.text = (totSteptemp).ToString();
-        ExpManager.instance.AddEXP(totSteptemp); //exp
+
+        
+            totSteptemp = Mathf.RoundToInt(sc.step1 * sc.multiplier);
+            TotStep.text = (totSteptemp).ToString();
+            ExpManager.instance.AddEXP(totSteptemp); //exp} }
+
+        
     }
 
     public void OpeningAreUSure() {

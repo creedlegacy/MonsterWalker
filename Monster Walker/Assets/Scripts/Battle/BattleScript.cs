@@ -66,8 +66,12 @@ public class BattleScript : MonoBehaviour
     //UiHolder
     public CanvasGroup UIHolder;
 
+    //Sound
+    private AudioScript AS;
+
     private void Awake()
     {
+        AS = FindObjectOfType<AudioScript>();
         askill = FindObjectOfType<AllSkill>();
         MM = FindObjectOfType<MonsterManager>();
         PrepareForEnemy();
@@ -359,6 +363,7 @@ public class BattleScript : MonoBehaviour
             else
             {
                 StartCoroutine(PlayerAttackingAnimation(PC.MonAtk));
+                HitSound();
             }
 
             if (WhistlingWindActive)
@@ -377,6 +382,7 @@ public class BattleScript : MonoBehaviour
         if (EnemyTurn)
         {
             StartCoroutine(EnemyAttackingAnimation(EC.EAtk));
+            HitSound();
         }
 
     }
@@ -570,6 +576,7 @@ public class BattleScript : MonoBehaviour
     }
 
     void DeadlyAttack() {
+        SkillSound();
         SkillName.text = "Deadly Strike";
         SkillName.color = Color.red;
         
@@ -580,6 +587,7 @@ public class BattleScript : MonoBehaviour
     }
 
     void HealingLight() {
+        SkillSound();
         SkillName.text = "Healing LIght";
         SkillName.color = Color.yellow;
         StartCoroutine(SkillActivate());
@@ -593,6 +601,7 @@ public class BattleScript : MonoBehaviour
     }
 
     void WhistlingWind() {
+        SkillSound();
         SkillName.text = "Whistling Wind";
         SkillName.color = Color.green;
         StartCoroutine(SkillActivate());
@@ -621,8 +630,20 @@ public class BattleScript : MonoBehaviour
         
 
     }
-    
+
     #endregion
+
+
+    public void HitSound()
+    {
+        AS.SFXSource.clip = AS.HitSound;
+        AS.SFXSource.Play();
+    }
+    public void SkillSound()
+    {
+        AS.SFXSource.clip = AS.UseSkillSound;
+        AS.SFXSource.Play();
+    }
 
 
     public void ReturnToGameScreen() {

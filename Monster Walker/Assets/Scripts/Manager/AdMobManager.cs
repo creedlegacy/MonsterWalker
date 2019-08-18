@@ -10,7 +10,12 @@ public class AdMobManager : MonoBehaviour
     private BannerView bannerView;
     private InterstitialAd interAd;
     private RewardBasedVideoAd videoAd;
+    private UIManager ui = new UIManager();
     [SerializeField] private string appID = "ca-app-pub-4306238078188379~5897581980";
+
+    private bool videoAdClosed;
+    //hide panel
+    public GameObject ResultPanel,RewardPanel;
 
    
 
@@ -30,28 +35,50 @@ public class AdMobManager : MonoBehaviour
     }
     private void Start()
     {
-
+        ui = FindObjectOfType<UIManager>();
+      
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-
-
-
-
-
         if(sceneName == "OpeningMenu" || sceneName =="StepCounter" || sceneName=="Battle") { this.RequestBanner(); }
         
 
-
-
         this.RequestInterstitial();
-        this.RequestVideo();
-
         
-    }
-    
+        videoAd = RewardBasedVideoAd.Instance;
 
-    
+        // Called when an ad request has successfully loaded.
+        videoAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
+        // Called when an ad request failed to load.
+        videoAd.OnAdFailedToLoad += HandleRewardBasedVideoFailedToLoad;
+        // Called when an ad is shown.
+        videoAd.OnAdOpening += HandleRewardBasedVideoOpened;
+        // Called when the ad starts to play.
+        videoAd.OnAdStarted += HandleRewardBasedVideoStarted;
+        // Called when the user should be rewarded for watching a video.
+        videoAd.OnAdRewarded += HandleRewardBasedVideoRewarded;
+        // Called when the ad is closed.
+        videoAd.OnAdClosed += HandleRewardBasedVideoClosed;
+        // Called when the ad click caused the user to leave the application.
+        videoAd.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;
+
+        this.RequestVideo();
+        videoAdClosed = false;
+
+    }
+
+    private void Update()
+    {
+        if (videoAdClosed)
+        {
+            ui.TrainingVideoAd();
+            ResultPanel.SetActive(false);
+            RewardPanel.SetActive(true);
+        }
+    }
+
+
+
     public void RequestBanner()
     {
         if (bannerView != null)
@@ -111,7 +138,7 @@ public class AdMobManager : MonoBehaviour
 
     public void RequestVideo()
     {
-        videoAd = RewardBasedVideoAd.Instance;
+        //videoAd = RewardBasedVideoAd.Instance;
 
         //AdRequest request = new AdRequest.Builder().Build();
         //for testing
@@ -148,13 +175,13 @@ public class AdMobManager : MonoBehaviour
     //BANNER
     public void HandleOnAdLoaded(object sender, EventArgs args)
     {
-
+        MonoBehaviour.print("HandleAdLoaded event received");
         //ShowBanner();
     }
 
     public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
-        //RequestBanner();
+        MonoBehaviour.print("Banner failed to load: " + args.Message);
     }
 
     public void HandleOnAdOpened(object sender, EventArgs args)
@@ -202,89 +229,58 @@ public class AdMobManager : MonoBehaviour
     }
 
 
-    
+
 
     ////VIDEO
-    //public void HandleRewardBasedVideoLoaded(object sender, EventArgs args)
-    //{
-    //    MonoBehaviour.print("HandleRewardBasedVideoLoaded event received");
-    //}
+    public void HandleRewardBasedVideoLoaded(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleRewardBasedVideoLoaded event received");
+    }
 
-    //public void HandleRewardBasedVideoFailedToLoad(object sender, AdFailedToLoadEventArgs args)
-    //{
-    //    MonoBehaviour.print(
-    //        "HandleRewardBasedVideoFailedToLoad event received with message: " + args.Message);
-    //}
+    public void HandleRewardBasedVideoFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+    {
+        MonoBehaviour.print(
+            "HandleRewardBasedVideoFailedToLoad event received with message: " + args.Message);
+    }
 
-    //public void HandleRewardBasedVideoOpened(object sender, EventArgs args)
-    //{
-    //    MonoBehaviour.print("HandleRewardBasedVideoOpened event received");
-    //}
+    public void HandleRewardBasedVideoOpened(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleRewardBasedVideoOpened event received");
+    }
 
-    //public void HandleRewardBasedVideoStarted(object sender, EventArgs args)
-    //{
-    //    MonoBehaviour.print("HandleRewardBasedVideoStarted event received");
-    //}
+    public void HandleRewardBasedVideoStarted(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleRewardBasedVideoStarted event received");
+    }
 
-    //public void HandleRewardBasedVideoClosed(object sender, EventArgs args)
-    //{
-    //    MonoBehaviour.print("HandleRewardBasedVideoClosed event received");
-    //}
+    public void HandleRewardBasedVideoClosed(object sender, EventArgs args)
+    {
+        this.RequestVideo();
+    }
 
-    //public void HandleRewardBasedVideoRewarded(object sender, Reward args)
-    //{
-    //    string type = args.Type;
-    //    double amount = args.Amount;
-    //    MonoBehaviour.print(
-    //        "HandleRewardBasedVideoRewarded event received for " + amount.ToString() + " " + type);
-    //}
+    public void HandleRewardBasedVideoRewarded(object sender, Reward args)
+    {
+        string type = args.Type;
+        double amount = args.Amount;
+        MonoBehaviour.print(
+            "HandleRewardBasedVideoRewarded event received for " + amount.ToString() + " " + type);
 
-    //public void HandleRewardBasedVideoLeftApplication(object sender, EventArgs args)
-    //{
-    //    MonoBehaviour.print("HandleRewardBasedVideoLeftApplication event received");
-    //}
+        videoAdClosed = true;
+        //ResultPanel.SetActive(false);
+        //RewardPanel.SetActive(true);
+    }
+
+    public void HandleRewardBasedVideoLeftApplication(object sender, EventArgs args)
+    {
+        MonoBehaviour.print("HandleRewardBasedVideoLeftApplication event received");
+    }
 
 
 
 
-    //void HandleRewardBasedVideoADEvents(bool subscribe)
-    //{
-    //    if (subscribe)
-    //    {
-    //        // Called when an ad request has successfully loaded.
-    //        videoAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
-    //        // Called when an ad request failed to load.
-    //        videoAd.OnAdFailedToLoad += HandleRewardBasedVideoFailedToLoad;
-    //        // Called when an ad is clicked.
-    //        videoAd.OnAdOpening += HandleRewardBasedVideoOpened;
-    //        //
-    //        videoAd.OnAdStarted += HandleRewardBasedVideoStarted;
-    //        // Called when the user returned from the app after an ad click.
-    //        videoAd.OnAdClosed += HandleRewardBasedVideoClosed;
-    //        //
-    //        videoAd.OnAdRewarded += HandleRewardBasedVideoRewarded;
-    //        // Called when the ad click caused the user to leave the application.
-    //        videoAd.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;
-    //    }
-    //    else
-    //    {
-    //        // Called when an ad request has successfully loaded.
-    //        videoAd.OnAdLoaded -= HandleRewardBasedVideoLoaded;
-    //        // Called when an ad request failed to load.
-    //        videoAd.OnAdFailedToLoad -= HandleRewardBasedVideoFailedToLoad;
-    //        // Called when an ad is clicked.
-    //        videoAd.OnAdOpening -= HandleRewardBasedVideoOpened;
-    //        //
-    //        videoAd.OnAdStarted -= HandleRewardBasedVideoStarted;
-    //        // Called when the user returned from the app after an ad click.
-    //        videoAd.OnAdClosed -= HandleRewardBasedVideoClosed;
-    //        //
-    //        videoAd.OnAdRewarded -= HandleRewardBasedVideoRewarded;
-    //        // Called when the ad click caused the user to leave the application.
-    //        videoAd.OnAdLeavingApplication -= HandleRewardBasedVideoLeftApplication;
-    //    }
 
-    //}
+
+
 
 
 
