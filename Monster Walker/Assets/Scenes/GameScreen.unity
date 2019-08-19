@@ -11848,6 +11848,7 @@ MonoBehaviour:
   CurStep: {fileID: 0}
   BesStep: {fileID: 0}
   TotStep: {fileID: 0}
+  AdStepText: {fileID: 0}
   multiplier: {fileID: 0}
   LowPot: {fileID: 1432992239}
   MedPot: {fileID: 1250569368}
@@ -20440,6 +20441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appID: ca-app-pub-4306238078188379~5897581980
+  ResultPanel: {fileID: 0}
+  RewardPanel: {fileID: 0}
 --- !u!4 &1466256936
 Transform:
   m_ObjectHideFlags: 0
@@ -29790,17 +29793,6 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 807512900}
         m_MethodName: clickStatusTempUpdate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1466256935}
-        m_MethodName: ShowInterstitial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

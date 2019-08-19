@@ -11,7 +11,11 @@ public class AdMobManager : MonoBehaviour
     private InterstitialAd interAd;
     private RewardBasedVideoAd videoAd;
     private UIManager ui = new UIManager();
-    [SerializeField] private string appID = "ca-app-pub-4306238078188379~5897581980";
+    private BattleScript bs = new BattleScript();
+
+    //real appid ca-app-pub-4306238078188379~5897581980
+    [SerializeField] private string appID = "ca-app-pub-3940256099942544~3347511713";
+    
 
     private bool videoAdClosed;
     //hide panel
@@ -36,11 +40,12 @@ public class AdMobManager : MonoBehaviour
     private void Start()
     {
         ui = FindObjectOfType<UIManager>();
+        bs = FindObjectOfType<BattleScript>();
       
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if(sceneName == "OpeningMenu" || sceneName =="StepCounter" || sceneName=="Battle") { this.RequestBanner(); }
+        if( sceneName =="StepCounter" || sceneName=="Battle") { this.RequestBanner(); }
         
 
         this.RequestInterstitial();
@@ -71,9 +76,21 @@ public class AdMobManager : MonoBehaviour
     {
         if (videoAdClosed)
         {
-            ui.TrainingVideoAd();
-            ResultPanel.SetActive(false);
-            RewardPanel.SetActive(true);
+            switch (Application.loadedLevelName)
+            {
+                case "StepCounter":
+                    ui.TrainingVideoAd();
+                    ResultPanel.SetActive(false);
+                    RewardPanel.SetActive(true);
+                    break;
+                case "Battle":
+                    bs.BattleVideoAd();
+                    ResultPanel.SetActive(false);
+                    RewardPanel.SetActive(true);
+                    break;
+            }
+
+            
         }
     }
 

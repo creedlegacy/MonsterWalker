@@ -362,7 +362,9 @@ public class UIManager : MonoBehaviour
         AdStep = (int)(totSteptemp * 1.5);
         AdstepAddition  = AdStep - totSteptemp;
         AdStepText.text = (AdStep).ToString();
+        
         ExpManager.instance.AddEXP(AdstepAddition);
+        
 
     }
 
@@ -382,8 +384,6 @@ public class UIManager : MonoBehaviour
         multiplier.text = "x " + sc.multiplier.ToString("#.#");
         CurStep.text = sc.step1.ToString();
         BesStep.text = StatisticManager.instance.TOPSTEP.ToString();
-
-        
             totSteptemp = Mathf.RoundToInt(sc.step1 * sc.multiplier);
             TotStep.text = (totSteptemp).ToString();
             ExpManager.instance.AddEXP(totSteptemp); //exp} }

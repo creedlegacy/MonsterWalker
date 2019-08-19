@@ -58,9 +58,10 @@ public class BattleScript : MonoBehaviour
 
 
     //Opening and Ending UI
-    public GameObject OpeningUI, PrepareUI, EndingUI, WinGold;
-    public Text PrepareUIText, EndingUIText, GoldText;
+    public GameObject OpeningUI, PrepareUI, EndingUI, WinGold,AdWarning;
+    public Text PrepareUIText, EndingUIText, GoldText,GoldTextAd;
     public Animator OpUI;
+    private int WinGoldAd, WinGoldAdAddition;
     [SerializeField]private int WinGoldResult, counter = 0;
 
     //UiHolder
@@ -267,6 +268,7 @@ public class BattleScript : MonoBehaviour
             if (PlayerWin)
             {
                 EndingUIText.text = "You Win!";
+                AdWarning.SetActive(true);
                 float multiplier = ((float)M.OM.Level + (float)EC.ELvl) / 10;
                 float multi2 = multiplier * 2000;
                 WinGoldResult = (int)multi2;
@@ -296,6 +298,16 @@ public class BattleScript : MonoBehaviour
 
         #endregion
 
+    }
+
+    public void BattleVideoAd()
+    {
+        AdWarning.SetActive(false);
+        WinGoldAd = (int)(WinGoldResult * 1.5);
+       WinGoldAdAddition = WinGoldAd - WinGoldResult;
+       GoldTextAd.text = (WinGoldAd).ToString();
+
+        GoldManager.instance.AddGold(WinGoldAdAddition);
     }
 
     void PrepareForEnemy() {
