@@ -20,7 +20,6 @@ namespace PedometerU.Tests {
         private ParallaxBackground pb;
         public Text stepCounterText;
         public bool isDead, ContinuePlay;
-        [SerializeField]private MapManager mm;
         int counter = 0;
         public void Awake()
         {
@@ -234,7 +233,6 @@ namespace PedometerU.Tests {
 
 
             ContinuePlay = true;
-            mm.ExploreFinish = true;
 
             GoldGather.text = AccGold.ToString();
             ExpGather.text = AccExp.ToString();

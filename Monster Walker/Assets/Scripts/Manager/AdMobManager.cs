@@ -20,7 +20,7 @@ public class AdMobManager : MonoBehaviour
     private bool videoAdClosed;
     //hide panel
     public GameObject ResultPanel,RewardPanel;
-
+    public int counter1, counter2;
    
 
     //real ads
@@ -41,7 +41,7 @@ public class AdMobManager : MonoBehaviour
     {
         ui = FindObjectOfType<UIManager>();
         bs = FindObjectOfType<BattleScript>();
-      
+        counter1 = counter2 = 0;
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
@@ -79,12 +79,21 @@ public class AdMobManager : MonoBehaviour
             switch (Application.loadedLevelName)
             {
                 case "StepCounter":
-                    ui.TrainingVideoAd();
+                    counter1++;
+                    if (counter1 <= 1)
+                    {
+                        ui.TrainingVideoAd();
+                    }
                     ResultPanel.SetActive(false);
                     RewardPanel.SetActive(true);
                     break;
                 case "Battle":
-                    bs.BattleVideoAd();
+                    counter2++;
+                    if (counter2 <= 1)
+                    {
+                        bs.BattleVideoAd();
+                    }
+                    
                     ResultPanel.SetActive(false);
                     RewardPanel.SetActive(true);
                     break;

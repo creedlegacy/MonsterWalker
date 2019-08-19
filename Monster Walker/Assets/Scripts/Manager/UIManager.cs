@@ -50,6 +50,7 @@ public class UIManager : MonoBehaviour
 
     //Tutorial Menu
     private TutorialManager TM;
+    private int T_Step;
 
     //ItemIndication
     [SerializeField]private Text LowPot, MedPot, HighPot, BattleTicket;
@@ -358,22 +359,15 @@ public class UIManager : MonoBehaviour
 
     public void TrainingVideoAd()
     {
-        
-        AdStep = (int)(totSteptemp * 1.5);
-        AdstepAddition  = AdStep - totSteptemp;
+        AdStep = Mathf.RoundToInt(T_Step * 1.5f);
+        //AdstepAddition  = AdStep + T_Step;
         AdStepText.text = (AdStep).ToString();
-        
-        ExpManager.instance.AddEXP(AdstepAddition);
-        
-
+        ExpManager.instance.AddEXP(AdStep);
     }
 
 
     public void FinishTraining()
     {
-
-
-
         sc.pedometer.Dispose();
         sc.pedometer = null;
         M.An.SetBool("IsWalking", false);
@@ -386,10 +380,14 @@ public class UIManager : MonoBehaviour
         BesStep.text = StatisticManager.instance.TOPSTEP.ToString();
             totSteptemp = Mathf.RoundToInt(sc.step1 * sc.multiplier);
             TotStep.text = (totSteptemp).ToString();
-            ExpManager.instance.AddEXP(totSteptemp); //exp} }
-
-        
+        T_Step = totSteptemp;
     }
+
+    public void ReturnToGameScreenWithXP() {
+        ExpManager.instance.AddEXP(T_Step);
+        Application.LoadLevel("GameScreen");
+    }
+
 
     public void OpeningAreUSure() {
         AruSureTraining.SetActive(true);

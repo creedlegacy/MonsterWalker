@@ -18,25 +18,25 @@ public class GPS : MonoBehaviour
         StartCoroutine(WaitLogoAppear());
     }
 
-    IEnumerator Start() {
-        Input.location.Start();
+    //IEnumerator Start() {
+    //    Input.location.Start();
 
 
-        if (Input.location.status == LocationServiceStatus.Failed)
-        {
-            Debug.Log("Unable to determine device location");
-            yield break;
-        }
+    //    if (Input.location.status == LocationServiceStatus.Failed)
+    //    {
+    //        Debug.Log("Unable to determine device location");
+    //        yield break;
+    //    }
 
-    }
+    //}
 
-    public void Update()
-    {
+    //public void Update()
+    //{
             
-        longitude = Input.location.lastData.longitude;
-        latitude = Input.location.lastData.latitude;
+    //    longitude = Input.location.lastData.longitude;
+    //    latitude = Input.location.lastData.latitude;
         
-    }
+    //}
 
     IEnumerator WaitLogoAppear() {
         yield return new WaitForSeconds(1f);
