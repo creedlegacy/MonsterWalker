@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4493,6 +4493,8 @@ MonoBehaviour:
   appID: ca-app-pub-4306238078188379~5897581980
   ResultPanel: {fileID: 851288454}
   RewardPanel: {fileID: 799470243}
+  counter1: 0
+  counter2: 0
 --- !u!4 &1930411302
 Transform:
   m_ObjectHideFlags: 0
@@ -5356,7 +5358,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2009215171}
   - component: {fileID: 2009215172}
-  - component: {fileID: 2009215173}
   - component: {fileID: 2009215174}
   m_Layer: 5
   m_Name: AdBonus
@@ -5396,7 +5397,7 @@ Animator:
   m_GameObject: {fileID: 2009215170}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f5094e98769cc3b40aa87d484b698353, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6b1e4959386b5fc47a7c1b76958dc6a7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5405,18 +5406,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!225 &2009215173
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009215170}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &2009215174
 MonoBehaviour:
   m_ObjectHideFlags: 0

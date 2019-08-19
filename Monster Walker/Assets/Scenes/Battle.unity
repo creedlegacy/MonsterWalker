@@ -483,6 +483,8 @@ MonoBehaviour:
   appID: ca-app-pub-4306238078188379~5897581980
   ResultPanel: {fileID: 303193797}
   RewardPanel: {fileID: 1057348157}
+  counter1: 0
+  counter2: 0
 --- !u!4 &157844817
 Transform:
   m_ObjectHideFlags: 0
@@ -1139,7 +1141,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357548304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.9999739}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 395.06747, y: 395.06747, z: 395.06747}
   m_Children: []
   m_Father: {fileID: 391390070}
@@ -1446,9 +1448,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 391390070}
-  - component: {fileID: 391390073}
-  - component: {fileID: 391390072}
   - component: {fileID: 391390071}
+  - component: {fileID: 391390072}
   m_Layer: 5
   m_Name: AdBonus
   m_TagString: Untagged
@@ -1533,19 +1534,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!225 &391390072
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391390069}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!95 &391390073
+--- !u!95 &391390072
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -1555,7 +1544,7 @@ Animator:
   m_GameObject: {fileID: 391390069}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f5094e98769cc3b40aa87d484b698353, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6b1e4959386b5fc47a7c1b76958dc6a7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5432,7 +5421,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1139532062}
-        m_MethodName: ReturnToGameScreen
+        m_MethodName: ReturnToGameScreenWithXp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

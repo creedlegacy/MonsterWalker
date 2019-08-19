@@ -61,7 +61,7 @@ public class BattleScript : MonoBehaviour
     public GameObject OpeningUI, PrepareUI, EndingUI, WinGold,AdWarning;
     public Text PrepareUIText, EndingUIText, GoldText,GoldTextAd;
     public Animator OpUI;
-    private int WinGoldAd, WinGoldAdAddition;
+    private int WinGoldAd, WinGoldAdFinal;
     [SerializeField]private int WinGoldResult, counter = 0;
 
     //UiHolder
@@ -268,16 +268,19 @@ public class BattleScript : MonoBehaviour
             if (PlayerWin)
             {
                 EndingUIText.text = "You Win!";
-                AdWarning.SetActive(true);
+               
                 float multiplier = ((float)M.OM.Level + (float)EC.ELvl) / 10;
                 float multi2 = multiplier * 2000;
                 WinGoldResult = (int)multi2;
                 WinGold.SetActive(true);
                 GoldText.text = WinGoldResult.ToString();
+                
+                AdWarning.SetActive(true);
                 counter++;
                 if (counter <= 1)
                 {
-                    GoldManager.instance.AddGold(WinGoldResult);
+                    WinGoldAdFinal = WinGoldResult;
+                    //GoldManager.instance.AddGold(WinGoldResult);
                     BattleRecord.instance.AddWin(1);
                 }
 
@@ -302,12 +305,12 @@ public class BattleScript : MonoBehaviour
 
     public void BattleVideoAd()
     {
-        AdWarning.SetActive(false);
-        WinGoldAd = (int)(WinGoldResult * 1.5);
-       WinGoldAdAddition = WinGoldAd - WinGoldResult;
+        
+        WinGoldAd = Mathf.RoundToInt(WinGoldAdFinal * 1.5f);
+        
        GoldTextAd.text = (WinGoldAd).ToString();
 
-        GoldManager.instance.AddGold(WinGoldAdAddition);
+        GoldManager.instance.AddGold(WinGoldAd);
     }
 
     void PrepareForEnemy() {
@@ -658,7 +661,13 @@ public class BattleScript : MonoBehaviour
     }
 
 
-    public void ReturnToGameScreen() {
+    public void ReturnToGameScreenWithXp() {
+        GoldManager.instance.AddGold(WinGoldResult);
+        Application.LoadLevel("GameScreen");
+    }
+    public void ReturnToGameScreen()
+    {
+       
         Application.LoadLevel("GameScreen");
     }
 
