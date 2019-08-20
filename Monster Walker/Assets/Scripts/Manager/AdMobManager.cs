@@ -220,6 +220,7 @@ public class AdMobManager : MonoBehaviour
     public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
         MonoBehaviour.print("Banner failed to load: " + args.Message);
+        RequestBanner();
     }
 
     public void HandleOnAdOpened(object sender, EventArgs args)
@@ -249,6 +250,7 @@ public class AdMobManager : MonoBehaviour
     {
         MonoBehaviour.print(
             "HandleInterstitialFailedToLoad event received with message: " + args.Message);
+        RequestInterstitial();
     }
 
     public void HandleInterstitialOpened(object sender, EventArgs args)
@@ -279,6 +281,7 @@ public class AdMobManager : MonoBehaviour
     {
         MonoBehaviour.print(
             "HandleRewardBasedVideoFailedToLoad event received with message: " + args.Message);
+        RequestVideo();
     }
 
     public void HandleRewardBasedVideoOpened(object sender, EventArgs args)

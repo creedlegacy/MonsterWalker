@@ -256,8 +256,8 @@ namespace PedometerU.Tests {
 
             ContinuePlay = true;
 
-            GoldGather.text = AccGold.ToString();
-            ExpGather.text = AccExp.ToString();
+            GoldGather.text = AdGoldHolder.ToString();
+            ExpGather.text = AdXpHolder.ToString();
             BattleCounter.text = BattleTotal.ToString();
             TicketGather.text = AccTicket.ToString();
             pedometer.Dispose();

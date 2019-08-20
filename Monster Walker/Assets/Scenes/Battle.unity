@@ -485,6 +485,7 @@ MonoBehaviour:
   RewardPanel: {fileID: 1659504926}
   counter1: 0
   counter2: 0
+  counter3: 0
 --- !u!4 &157844817
 Transform:
   m_ObjectHideFlags: 0
@@ -1189,7 +1190,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 16
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: 23d019e81ee88504798cb7640acc8ae1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5750,7 +5751,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659504926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5bf30fb4cfcf580429aaa2463ad94a9a, type: 2}
   m_CullingMode: 0
