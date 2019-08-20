@@ -12,6 +12,7 @@ public class AdMobManager : MonoBehaviour
     private RewardBasedVideoAd videoAd;
     private UIManager ui = new UIManager();
     private BattleScript bs = new BattleScript();
+    private PedometerU.Tests.ExploreStep es = new PedometerU.Tests.ExploreStep();
 
     //real appid ca-app-pub-4306238078188379~5897581980
     [SerializeField] private string appID = "ca-app-pub-3940256099942544~3347511713";
@@ -20,7 +21,7 @@ public class AdMobManager : MonoBehaviour
     private bool videoAdClosed;
     //hide panel
     public GameObject ResultPanel,RewardPanel;
-    public int counter1, counter2;
+    public int counter1, counter2,counter3;
    
 
     //real ads
@@ -41,7 +42,8 @@ public class AdMobManager : MonoBehaviour
     {
         ui = FindObjectOfType<UIManager>();
         bs = FindObjectOfType<BattleScript>();
-        counter1 = counter2 = 0;
+        es = FindObjectOfType<PedometerU.Tests.ExploreStep>();
+        counter1 = counter2 = counter3 = 0;
 
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
@@ -94,6 +96,16 @@ public class AdMobManager : MonoBehaviour
                         bs.BattleVideoAd();
                     }
                     
+                    ResultPanel.SetActive(false);
+                    RewardPanel.SetActive(true);
+                    break;
+                case "Explore":
+                    counter3++;
+                    if (counter3 <= 1)
+                    {
+                        es.ExploreVideoAd();
+                    }
+
                     ResultPanel.SetActive(false);
                     RewardPanel.SetActive(true);
                     break;

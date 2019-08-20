@@ -1341,7 +1341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'best step:'
+  m_Text: 'Best Step:'
 --- !u!222 &116691068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3158,7 +3158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'death counter:'
+  m_Text: 'Death Counter:'
 --- !u!222 &199248706
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6168,7 +6168,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'battle encounter:'
+  m_Text: 'Combat Encounter:'
 --- !u!222 &387298120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11682,7 +11682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'win:'
+  m_Text: 'Win:'
 --- !u!222 &805246791
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14838,7 +14838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'total step:'
+  m_Text: 'Total Step:'
 --- !u!222 &975794337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17840,7 +17840,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'lose:'
+  m_Text: 'Lose:'
 --- !u!222 &1277437549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20443,6 +20443,8 @@ MonoBehaviour:
   appID: ca-app-pub-4306238078188379~5897581980
   ResultPanel: {fileID: 0}
   RewardPanel: {fileID: 0}
+  counter1: 0
+  counter2: 0
 --- !u!4 &1466256936
 Transform:
   m_ObjectHideFlags: 0
@@ -26560,7 +26562,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 15052e69618829140a5b13c8e5fdfea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -2,11 +2,13 @@ namespace PedometerU.Tests {
 
     using UnityEngine;
     using UnityEngine.UI;
+    using System.Collections;
+    using System.Collections.Generic;
 
     public class ExploreStep : MonoBehaviour {
 
         [SerializeField]private GameObject GameText, GameText2, GameText3, DeadText, FinishGameObject, AreUSure;
-        public Text GoldGather, ExpGather, BattleCounter, TicketGather;
+        public Text GoldGather, ExpGather, BattleCounter, TicketGather,AdGoldText,AdXpText;
         public Scrollbar ExploreUIScroll;
         public Transform TextHolder;
         [SerializeField]private int AccGold, AccExp, AccTicket, ExpGain, BattleTotal;
@@ -14,7 +16,7 @@ namespace PedometerU.Tests {
         public Pedometer pedometer;
         public double feet;
         public float multiplier;
-        public int step1, milestone, mileNum, HP;
+        public int step1, milestone, mileNum, HP,AdGold,AdGoldHolder,AdXpHolder,AdXp;
         [SerializeField]private bool notwalking, inst_again, inst_again2;
         private Monster M;
         private ParallaxBackground pb;
@@ -222,12 +224,32 @@ namespace PedometerU.Tests {
             AreUSure.SetActive(false);
         }
 
+        public void ExploreVideoAd()
+        {
+            AdGold = Mathf.RoundToInt(AdGoldHolder * 1.5f);
+            AdXp = Mathf.RoundToInt(AdXpHolder * 1.5f);
+            AdGoldText.text = (AdGold).ToString();
+            AdXpText.text = (AdXp).ToString();
+            GoldManager.instance.AddGold(AdGold);
+            ExpManager.instance.AddEXP(AdXp);
+        }
+
+        public void ReturnToGameScreenWithGoldandXP()
+        {
+            GoldManager.instance.AddGold(AccGold);
+            ExpManager.instance.AddEXP(AccExp);
+            Application.LoadLevel("GameScreen");
+        }
+
+
         public void ExploringFinish() {
 
             FinishGameObject.SetActive(true);
 
-            GoldManager.instance.AddGold(AccGold);
-            ExpManager.instance.AddEXP(AccExp);
+            AdGoldHolder = AccGold;
+            AdXpHolder = AccExp;
+            //GoldManager.instance.AddGold(AccGold);
+            //ExpManager.instance.AddEXP(AccExp);
             TicketManager.instance.AddTicket(AccTicket);
             StatisticManager.instance.AddBC(BattleTotal);
 
