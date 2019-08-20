@@ -16,6 +16,7 @@ public class BattleScript : MonoBehaviour
         public int MonNum, ELvl, EAtk, ESPD, EHP;
         public string Element;
         public Sprite EnemyElement;
+        public float blockPer;
 
         public AnimationClip[] EnemyAnimation;
         public float AttackingTime, AttackedTime, DieTime, IdleTime;
@@ -32,6 +33,7 @@ public class BattleScript : MonoBehaviour
         public float AttackingTime, AttackedTime, DieTime, IdleTime;
         public Animator PlayerAnimator;
         public int SpdMonster;
+        public float blockPer;
     }
     public PlayerClass PC;
 
@@ -409,35 +411,35 @@ public class BattleScript : MonoBehaviour
 
         if (M.OM.monster.m_type.ToString() == "Fire" && EC.Element == "Water")
         {
-            playerStr -= (int)(Str * 0.25f);
-            enemyStr += (int)(Str * 0.25f);
+            playerStr -= Mathf.RoundToInt(Str * 0.25f);
+            enemyStr += Mathf.RoundToInt(Str * 0.25f);
         }
         else if (M.OM.monster.m_type.ToString() == "Fire" && EC.Element == "Grass")
         {
-            playerStr += (int)(Str * 0.25f);
-            enemyStr -= (int)(Str * 0.25f);
+            playerStr += Mathf.RoundToInt(Str * 0.25f);
+            enemyStr -= Mathf.RoundToInt(Str * 0.25f);
         }
 
         if (M.OM.monster.m_type.ToString() == "Water" && EC.Element == "Grass")
         {
-            playerStr -= (int)(Str * 0.25f);
-            enemyStr += (int)(Str * 0.25f);
+            playerStr -= Mathf.RoundToInt(Str * 0.25f);
+            enemyStr += Mathf.RoundToInt(Str * 0.25f);
         }
         else if (M.OM.monster.m_type.ToString() == "Water" && EC.Element == "Fire")
         {
-            playerStr += (int)(Str * 0.25f);
-            enemyStr -= (int)(Str * 0.25f);
+            playerStr += Mathf.RoundToInt(Str * 0.25f);
+            enemyStr -= Mathf.RoundToInt(Str * 0.25f);
         }
 
         if (M.OM.monster.m_type.ToString() == "Grass" && EC.Element == "Water")
         {
-            playerStr -= (int)(Str * 0.25f);
-            enemyStr += (int)(Str * 0.25f);
+            playerStr -= Mathf.RoundToInt(Str * 0.25f);
+            enemyStr += Mathf.RoundToInt(Str * 0.25f);
         }
         else if (M.OM.monster.m_type.ToString() == "Grass" && EC.Element == "Fire")
         {
-            playerStr += (int)(Str * 0.25f);
-            enemyStr -= (int)(Str * 0.25f);
+            playerStr += Mathf.RoundToInt(Str * 0.25f);
+            enemyStr -= Mathf.RoundToInt(Str * 0.25f);
         }
 
         int damage = 0;
@@ -467,7 +469,25 @@ public class BattleScript : MonoBehaviour
 
     IEnumerator EnemyGetAttacked(int damage) {
         EC.EnemyAnimator.SetBool("IsAttacked", true);
-        EC.EHP -= damage;
+
+        if (PC.MonAtk < EC.EAtk)
+        {
+            EC.blockPer = (((EC.EAtk - PC.MonAtk)/PC.MonAtk) * 100);
+            Debug.Log(EC.blockPer);
+
+            if (EC.blockPer >= 50f)
+            {
+                EC.blockPer = 50f;
+            }
+            float totalDMG = damage - (damage * (EC.blockPer/100));
+            EC.EHP -= Mathf.RoundToInt(totalDMG);
+            Debug.Log(EC.blockPer);
+            Debug.Log(Mathf.RoundToInt(totalDMG));
+        }
+        else
+        {
+            EC.EHP -= damage;
+        }
         yield return new WaitForSeconds(EC.AttackedTime);
         EC.EnemyAnimator.SetBool("IsAttacked", false);
         
@@ -487,7 +507,24 @@ public class BattleScript : MonoBehaviour
 
     IEnumerator PlayerGetAttacked(int damage) {
         M.An.SetBool("IsAttacked", true);
-        PC.MonHP -= damage;
+
+        if (EC.EAtk < PC.MonAtk)
+        {
+            PC.blockPer = (((PC.MonAtk - EC.EAtk) / EC.EAtk) * 100);
+            Debug.Log(PC.blockPer);
+            if (PC.blockPer >= 50f)
+            {
+                PC.blockPer = 50f;
+            }
+            float totalDMG = damage - (damage * (PC.blockPer / 100));
+            PC.MonHP -= Mathf.RoundToInt(totalDMG);
+            Debug.Log(PC.blockPer);
+            Debug.Log(Mathf.RoundToInt(totalDMG));
+        }
+        else
+        {
+            PC.MonHP -= damage;
+        }
         yield return new WaitForSeconds(PC.AttackedTime);
         M.An.SetBool("IsAttacked", false);
         EnemyTurn = false;
