@@ -17,6 +17,7 @@ public class BattleScript : MonoBehaviour
         public string Element;
         public Sprite EnemyElement;
         public float blockPer;
+        public GameObject BlockAnimation;
 
         public AnimationClip[] EnemyAnimation;
         public float AttackingTime, AttackedTime, DieTime, IdleTime;
@@ -34,6 +35,7 @@ public class BattleScript : MonoBehaviour
         public Animator PlayerAnimator;
         public int SpdMonster;
         public float blockPer;
+        public GameObject BlockAnimation, DS, HL, WW;
     }
     public PlayerClass PC;
 
@@ -74,6 +76,9 @@ public class BattleScript : MonoBehaviour
 
     private void Awake()
     {
+        PC.DS.GetComponent<ParticleSystem>().Stop(true);
+        PC.HL.GetComponent<ParticleSystem>().Stop(true);
+        PC.WW.GetComponent<ParticleSystem>().Stop(true);
         AS = FindObjectOfType<AudioScript>();
         askill = FindObjectOfType<AllSkill>();
         MM = FindObjectOfType<MonsterManager>();
@@ -270,14 +275,12 @@ public class BattleScript : MonoBehaviour
             if (PlayerWin)
             {
                 EndingUIText.text = "You Win!";
-               
+                StartCoroutine(ShowAdWarning());
                 float multiplier = ((float)M.OM.Level + (float)EC.ELvl) / 10;
                 float multi2 = multiplier * 2000;
                 WinGoldResult = (int)multi2;
                 WinGold.SetActive(true);
                 GoldText.text = WinGoldResult.ToString();
-                
-                AdWarning.SetActive(true);
                 counter++;
                 if (counter <= 1)
                 {
@@ -286,6 +289,11 @@ public class BattleScript : MonoBehaviour
                     BattleRecord.instance.AddWin(1);
                 }
 
+            }
+
+            IEnumerator ShowAdWarning() {
+                yield return new WaitForSeconds(1.5f);
+                AdWarning.SetActive(true);
             }
 
             if (EnemyWin)
@@ -472,7 +480,9 @@ public class BattleScript : MonoBehaviour
 
         if (PC.MonAtk < EC.EAtk)
         {
-            EC.blockPer = (((EC.EAtk - PC.MonAtk)/PC.MonAtk) * 100);
+            StartCoroutine(EnemyBlockHide());
+            float atkCount = EC.EAtk - PC.MonAtk;
+            EC.blockPer = (((atkCount)/PC.MonAtk) * 100);
             Debug.Log(EC.blockPer);
 
             if (EC.blockPer >= 50f)
@@ -498,6 +508,12 @@ public class BattleScript : MonoBehaviour
         PlayerTurn = false;
     }
 
+    IEnumerator EnemyBlockHide() {
+        EC.BlockAnimation.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        EC.BlockAnimation.SetActive(false);
+    }
+
     IEnumerator EnemyAttackingAnimation(int damage) {
         EC.EnemyAnimator.SetBool("IsAttacking", true);
         yield return new WaitForSeconds(EC.AttackingTime);
@@ -510,7 +526,9 @@ public class BattleScript : MonoBehaviour
 
         if (EC.EAtk < PC.MonAtk)
         {
-            PC.blockPer = (((PC.MonAtk - EC.EAtk) / EC.EAtk) * 100);
+            StartCoroutine(PlayerBlockHide());
+            float atkCount = PC.MonAtk - EC.EAtk;
+            PC.blockPer = (((atkCount) / EC.EAtk) * 100);
             Debug.Log(PC.blockPer);
             if (PC.blockPer >= 50f)
             {
@@ -528,6 +546,13 @@ public class BattleScript : MonoBehaviour
         yield return new WaitForSeconds(PC.AttackedTime);
         M.An.SetBool("IsAttacked", false);
         EnemyTurn = false;
+    }
+
+    IEnumerator PlayerBlockHide()
+    {
+        PC.BlockAnimation.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        PC.BlockAnimation.SetActive(false);
     }
 
     IEnumerator FinishBattleUI(float time) {
@@ -629,6 +654,7 @@ public class BattleScript : MonoBehaviour
 
     void DeadlyAttack() {
         SkillSound();
+        PC.DS.GetComponent<ParticleSystem>().Play(true);
         SkillName.text = "Deadly Strike";
         SkillName.color = Color.red;
         
@@ -640,6 +666,7 @@ public class BattleScript : MonoBehaviour
 
     void HealingLight() {
         SkillSound();
+        PC.HL.GetComponent<ParticleSystem>().Play(true);
         SkillName.text = "Healing LIght";
         SkillName.color = Color.yellow;
         StartCoroutine(SkillActivate());
@@ -654,6 +681,7 @@ public class BattleScript : MonoBehaviour
 
     void WhistlingWind() {
         SkillSound();
+        PC.WW.GetComponent<ParticleSystem>().Play(true);
         SkillName.text = "Whistling Wind";
         SkillName.color = Color.green;
         StartCoroutine(SkillActivate());
@@ -665,6 +693,7 @@ public class BattleScript : MonoBehaviour
 
     }
 
+  
 
     #endregion
 

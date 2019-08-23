@@ -62,6 +62,7 @@ public class UIManager : MonoBehaviour
             ArmorUI, AccUI, SkillUI, StatisticUI, ShopUI, 
             ShopWeapon, ShopArmor, ShopAcc, ShopPotion, PointNotif,
             BattleBtnWarning;
+        public Scrollbar WeaponScroll, ArmorScroll, AccScroll, PotionScroll;
         public bool StatusShown, LvUpClick, ShopShown;
         public Text StatHP, StatSTR, StatSPD,
             LevelHP, LevelSTR, LevelSPD, 
@@ -73,7 +74,7 @@ public class UIManager : MonoBehaviour
         public int tempHP, tempSTR, tempSPD, 
             pointUsedTotal, pointUsedHP, pointUsedSTR, pointUsedSPD;
         public SpriteRenderer CurWea, CurArm, CurAcc, CurSkill, CurrElement;
-        public Scrollbar WS, AS, ACCS;
+        public Scrollbar WS, AS, ACCS, SkillScroll;
         public int e_w_c, e_a_c, e_acc_c, s_c, NOWHP, NOWSPD, NOWSTR;
     }
     public StatusUI SUI = new StatusUI();
@@ -455,11 +456,13 @@ public class UIManager : MonoBehaviour
             PlayShop();
             SUI.ShopShown = true;
             SUI.StatusShown = false;
+
             ClickShop();
+            SUI.WeaponScroll.value = 1; SUI.WeaponScroll.value = 1;
+
         }
         else
         {
-            PlayGS();
             SUI.ShopShown = false;
             CloseShop();
         }
@@ -479,6 +482,7 @@ public class UIManager : MonoBehaviour
 
     public void CloseShop()
     {
+        PlayGS();
         SUI.StatsUI.SetActive(false);
         SUI.ShopUI.SetActive(false);
         SUI.ShopWeapon.SetActive(false);
@@ -698,6 +702,7 @@ public class UIManager : MonoBehaviour
         SUI.WS.value = 1;
     }
 
+ 
     public void StatArmorBtn()
     {
         SUI.StatisticUI.SetActive(false);
@@ -733,6 +738,7 @@ public class UIManager : MonoBehaviour
         SUI.AccUI.SetActive(false);
         SUI.ArmorUI.SetActive(false);
         SUI.WeaponUI.SetActive(false);
+        SUI.SkillScroll.value = 1;
     }
 
     #endregion
@@ -748,6 +754,8 @@ public class UIManager : MonoBehaviour
         SUI.ShopArmor.SetActive(false);
         SUI.ShopAcc.SetActive(false);
         SUI.ShopPotion.SetActive(false);
+        SUI.WeaponScroll.value = 1;
+
     }
 
     public void OpenShopArmor() {
@@ -755,6 +763,8 @@ public class UIManager : MonoBehaviour
         SUI.ShopArmor.SetActive(true);
         SUI.ShopAcc.SetActive(false);
         SUI.ShopPotion.SetActive(false);
+        SUI.ArmorScroll.value = 1;
+
     }
 
     public void OpenShopAcc() {
@@ -762,6 +772,8 @@ public class UIManager : MonoBehaviour
         SUI.ShopArmor.SetActive(false);
         SUI.ShopAcc.SetActive(true);
         SUI.ShopPotion.SetActive(false);
+        SUI.AccScroll.value = 1;
+
     }
 
 
@@ -770,6 +782,8 @@ public class UIManager : MonoBehaviour
         SUI.ShopArmor.SetActive(false);
         SUI.ShopAcc.SetActive(false);
         SUI.ShopPotion.SetActive(true);
+        SUI.PotionScroll.value = 1;
+
     }
 
     #endregion

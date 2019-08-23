@@ -11872,6 +11872,10 @@ MonoBehaviour:
     ShopPotion: {fileID: 365198639}
     PointNotif: {fileID: 1375181888}
     BattleBtnWarning: {fileID: 658215072}
+    WeaponScroll: {fileID: 1901565614}
+    ArmorScroll: {fileID: 731886460}
+    AccScroll: {fileID: 1932343789}
+    PotionScroll: {fileID: 821220848}
     StatusShown: 0
     LvUpClick: 0
     ShopShown: 0
@@ -11907,6 +11911,7 @@ MonoBehaviour:
     WS: {fileID: 1768160841}
     AS: {fileID: 1893225569}
     ACCS: {fileID: 1378295831}
+    SkillScroll: {fileID: 1556942164}
     e_w_c: 0
     e_a_c: 0
     e_acc_c: 0
@@ -20445,6 +20450,7 @@ MonoBehaviour:
   RewardPanel: {fileID: 0}
   counter1: 0
   counter2: 0
+  counter3: 0
 --- !u!4 &1466256936
 Transform:
   m_ObjectHideFlags: 0
@@ -25122,7 +25128,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 1
   m_CellSize: {x: 1, y: 1}
-  m_Spacing: {x: 0, y: 320}
+  m_Spacing: {x: 0, y: 350}
   m_Constraint: 1
   m_ConstraintCount: 1
 --- !u!114 &1850187356
@@ -30043,6 +30049,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 807512900}
         m_MethodName: StatWeaponBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 807512900}
+        m_MethodName: ScroillWeaponOne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
