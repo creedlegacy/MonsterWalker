@@ -1,0 +1,5 @@
+idle = 0
+walk = 1 -2 -3- 2 -1
+attack, back to idle = 4-5-6-5-4-1
+hit = 7
+dead = 7-8

@@ -1,0 +1,5 @@
+idle = 0
+walk = 0 - 1 - 0 - 1
+attack = 2-3-4-2-0
+idle, hit, idle = 0-5-2-0 
+idle, dead = 0-5-6-7
