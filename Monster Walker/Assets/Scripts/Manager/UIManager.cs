@@ -270,10 +270,10 @@ public class UIManager : MonoBehaviour
 
         if (tempchose == 0)
         {
-            ChoseMonSpriteSize.localScale = new Vector3(186.2669f, 201.1682f, 0);
+            ChoseMonSpriteSize.localPosition = new Vector3(-438f, 397f, 0);
+            ChoseMonSpriteSize.localScale = new Vector3(30f, 30f, 0);
             //232.8336 251.4603
-            ChoseMonSprite.sprite = MM.allMonster[0].image;
-            ChoseMonSprite.flipX = true;
+            ChoseMonSprite.sprite = MM.allMonster[0].image; ChoseMonSprite.flipX = false;
             ChoseMonName.text = MM.allMonster[0].m_name;
             ChoseMonBio.text = "Some says that slime is the weakest monster in the world. " +
                 "Well, this one strongly disagrees! " +
@@ -286,7 +286,8 @@ public class UIManager : MonoBehaviour
             ChoseMonSPD.text = MM.allMonster[0].m_spd.ToString();
         }else if (tempchose == 1)
         {
-            ChoseMonSpriteSize.localScale = new Vector3(122.544f, 132.3475f, 0);
+            ChoseMonSpriteSize.localPosition = new Vector3(-438f, 341f,0);
+            ChoseMonSpriteSize.localScale = new Vector3(30f, 27f, 0);
             //122.544 132.3475
             ChoseMonSprite.sprite = MM.allMonster[1].image;
             ChoseMonSprite.flipX = false;
@@ -301,10 +302,11 @@ public class UIManager : MonoBehaviour
             ChoseMonSPD.text = MM.allMonster[1].m_spd.ToString();
         }else if (tempchose == 2)
         {
-            ChoseMonSpriteSize.localScale = new Vector3(256.117f, 276.6064f, 0);
+            ChoseMonSpriteSize.localPosition = new Vector3(-438f, 434f,0);
+            ChoseMonSpriteSize.localScale = new Vector3(120f, 120f, 0);
             //256.117 276.6064
+            ChoseMonSprite.flipX = false;
             ChoseMonSprite.sprite = MM.allMonster[2].image;
-            ChoseMonSprite.flipX = true;
             ChoseMonName.text = MM.allMonster[2].m_name;
             ChoseMonBio.text = "Born in the forest, Mushroom is the spawn of the forest guardian. " +
                 "It likes to jump around and has fun with its kin. " +
