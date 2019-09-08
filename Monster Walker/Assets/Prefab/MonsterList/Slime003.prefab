@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 65ef5b73a91e6a24a84651583ccaaf01, type: 3}
   Element: {fileID: 21300028, guid: 272e928a3defc174aa04541c83da3a93, type: 3}
-  m_num: 7
+  m_num: 9
   m_name: Slime
   m_type: 2
   m_hp: 20

@@ -14,7 +14,7 @@ public class GPS : MonoBehaviour
         
         instance = this;
         DontDestroyOnLoad(this);
-       //PlayerPrefs.DeleteAll();
+      //PlayerPrefs.DeleteAll();
         StartCoroutine(WaitLogoAppear());
     }
 

@@ -18,7 +18,8 @@ public class UIManager : MonoBehaviour
     //textUI
     public Text nickname, monLevel, monExp, playGold;
 
-    private AudioScript AS;
+    [SerializeField]private AudioScript AS;
+    [SerializeField]private AudioScript SM;
 
     //setting
     public Slider MusicSlider, SFXSlider;
@@ -304,7 +305,7 @@ public class UIManager : MonoBehaviour
         }else if (tempchose == 2)
         {
             ChoseMonSpriteSize.localPosition = new Vector3(0f, -1050f,0);
-            ChoseMonSpriteSize.localScale = new Vector3(110f, 110f, 0);
+            ChoseMonSpriteSize.localScale = new Vector3(30f, 30f, 0);
             //256.117 276.6064
             ChoseMonSprite.flipX = false;
             ChoseMonSprite.sprite = MM.allMonster[2].image;
@@ -485,7 +486,7 @@ public class UIManager : MonoBehaviour
 
     public void CloseShop()
     {
-        PlayGS();
+        ShopClosed();
         SUI.StatsUI.SetActive(false);
         SUI.ShopUI.SetActive(false);
         SUI.ShopWeapon.SetActive(false);
@@ -866,7 +867,13 @@ public class UIManager : MonoBehaviour
     }
 
     void PlayShop() {
-        AS.MusicSource.clip = AS.ShopMusic;
+        AS.MusicSource.Pause();
+        SM.MusicSource.clip = SM.ShopMusic;
+        SM.MusicSource.Play();
+    }
+
+    void ShopClosed() {
+        SM.MusicSource.Stop();
         AS.MusicSource.Play();
     }
 

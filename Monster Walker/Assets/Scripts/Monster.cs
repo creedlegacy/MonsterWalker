@@ -70,15 +70,11 @@ public class Monster : MonoBehaviour
 
             if (SpriteInStatus == true)
             {
-                if (OM.monster.m_num == 4)
+                if (OM.monster.m_num == 7 || OM.monster.m_num == 8 || OM.monster.m_num == 9)
                 {
-                    gameObject.transform.localPosition = new Vector3(-1.5f, 25.9f, 0);
-                }
-                else if (OM.monster.m_num == 5)
-                {
-                    gameObject.transform.localPosition = new Vector3(-3.5f, 32.2f, 0);
-                    gameObject.transform.localScale = new Vector3(7, 7, 1);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                    gameObject.transform.localScale = new Vector3(1.05f, 1.05f, 0);
+
+                    gameObject.transform.localPosition = new Vector3(-1.6f, 30.9f, 0);
                 }
             }
 
@@ -103,16 +99,11 @@ public class Monster : MonoBehaviour
             //in game screen
             if (OM.monster.m_num == 7)
             {
-                gameObject.transform.localScale = new Vector3(1.05f, 1.05f, 0);
+                gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
             }
-            else if (OM.monster.m_num == 8 )
+            else if (OM.monster.m_num == 8 || OM.monster.m_num == 9)
             {
                 gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
-
-            }
-            else if ( OM.monster.m_num == 9)
-            {
-                gameObject.transform.localScale = new Vector3(4.5f, 4.5f, 0);
 
             }
 
@@ -122,9 +113,12 @@ public class Monster : MonoBehaviour
 
             if (SpriteInStatus == true)
             {
-                gameObject.transform.localPosition = new Vector3(-3.1f, 34f, 0);
+                if (OM.monster.m_num == 7 || OM.monster.m_num == 8 || OM.monster.m_num == 9)
+                {
+                    gameObject.transform.localScale = new Vector3(1.05f, 1.05f, 0);
+                    gameObject.transform.localPosition = new Vector3(-1.6f, 30.9f, 0);
+                }
             }
-
 
 
             if (Application.loadedLevelName == "StepCounter")
