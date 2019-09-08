@@ -59,7 +59,7 @@ public class Monster : MonoBehaviour
             gameObject.transform.localPosition = new Vector3(0, -12.6f, 0);
             if (OM.monster.m_num == 7)
             {
-                gameObject.transform.localScale = new Vector3(5, 5, 0);
+                gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
             }
             else if (OM.monster.m_num == 8 || OM.monster.m_num == 9)
             {
@@ -98,14 +98,19 @@ public class Monster : MonoBehaviour
             OM.monster = MM.allMonster[PlayerPrefs.GetInt("PickMon")];
             sprite.GetComponent<SpriteRenderer>().sprite = OM.monster.image;
             An.runtimeAnimatorController = OM.monster.spriteAnimation;
-            gameObject.transform.localPosition = new Vector3(0, -12.6f, 0);
+            gameObject.transform.localPosition = new Vector3(0, -16f, 0);
 
             //in game screen
             if (OM.monster.m_num == 7)
             {
-                gameObject.transform.localScale = new Vector3(5, 5, 0);
+                gameObject.transform.localScale = new Vector3(1.1f, 1.1f, 0);
             }
-            else if (OM.monster.m_num == 8 || OM.monster.m_num == 9)
+            else if (OM.monster.m_num == 8 )
+            {
+                gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
+
+            }
+            else if ( OM.monster.m_num == 9)
             {
                 gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
 

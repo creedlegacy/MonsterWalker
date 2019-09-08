@@ -1,0 +1,4 @@
+idle = 0
+attack, then idle = 1-2-1-0 
+idle, hit, idle = 0-3-0
+idle, dead = 0-3-4
