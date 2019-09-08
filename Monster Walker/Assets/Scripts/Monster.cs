@@ -98,12 +98,12 @@ public class Monster : MonoBehaviour
             OM.monster = MM.allMonster[PlayerPrefs.GetInt("PickMon")];
             sprite.GetComponent<SpriteRenderer>().sprite = OM.monster.image;
             An.runtimeAnimatorController = OM.monster.spriteAnimation;
-            gameObject.transform.localPosition = new Vector3(0, -16f, 0);
+            gameObject.transform.localPosition = new Vector3(0, -15f, 0);
 
             //in game screen
             if (OM.monster.m_num == 7)
             {
-                gameObject.transform.localScale = new Vector3(1.1f, 1.1f, 0);
+                gameObject.transform.localScale = new Vector3(1.05f, 1.05f, 0);
             }
             else if (OM.monster.m_num == 8 )
             {
@@ -112,7 +112,7 @@ public class Monster : MonoBehaviour
             }
             else if ( OM.monster.m_num == 9)
             {
-                gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 0);
+                gameObject.transform.localScale = new Vector3(4.5f, 4.5f, 0);
 
             }
 
@@ -133,7 +133,7 @@ public class Monster : MonoBehaviour
                 if (OM.monster.m_num == 7)
                 {
                     gameObject.GetComponent<SpriteRenderer>().flipX = false;
-                    gameObject.transform.localPosition = new Vector3(0, -25.6f, 0);
+                    gameObject.transform.localPosition = new Vector3(0, -32f, 0);
 
                 }
                 else if (OM.monster.m_num == 8 || OM.monster.m_num == 9)
@@ -150,12 +150,17 @@ public class Monster : MonoBehaviour
                 if (OM.monster.m_num == 7)
                 {
                     gameObject.GetComponent<SpriteRenderer>().flipX = false;
-                    gameObject.transform.localPosition = new Vector3(0, -23.7f, 0);
+                    gameObject.transform.localPosition = new Vector3(0, -30f, 0);
 
                 }
-                else if (OM.monster.m_num == 8 || OM.monster.m_num == 9)
+                else if (OM.monster.m_num == 8)
                 {
                     gameObject.transform.localPosition = new Vector3(0, -25.6f, 0);
+                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                }
+                else if ( OM.monster.m_num == 9)
+                {
+                    gameObject.transform.localPosition = new Vector3(0, -26.5f, 0);
                     gameObject.GetComponent<SpriteRenderer>().flipX = false;
                 }
             }
