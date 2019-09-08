@@ -45,15 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81b1269253e5f84eb925544d3771267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  Element: {fileID: 0}
-  m_num: 0
-  m_name: 
+  image: {fileID: 21300000, guid: 4284a0efff87c1b4cb69695625ec098b, type: 3}
+  Element: {fileID: 21300124, guid: 272e928a3defc174aa04541c83da3a93, type: 3}
+  m_num: 8
+  m_name: Flarezard
   m_type: 0
-  m_hp: 0
-  m_atk: 0
-  m_spd: 0
-  spriteAnimation: {fileID: 0}
+  m_hp: 12
+  m_atk: 8
+  m_spd: 2
+  spriteAnimation: {fileID: 9100000, guid: 96fe0b87b6a394a4c968e7b8cfefa3af, type: 2}
 --- !u!212 &1564887472345825975
 SpriteRenderer:
   m_ObjectHideFlags: 0

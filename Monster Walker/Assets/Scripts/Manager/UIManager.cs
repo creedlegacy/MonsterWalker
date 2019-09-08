@@ -270,7 +270,7 @@ public class UIManager : MonoBehaviour
 
         if (tempchose == 0)
         {
-            ChoseMonSpriteSize.localPosition = new Vector3(-438f, 397f, 0);
+            ChoseMonSpriteSize.localPosition = new Vector3(0f, -1100f, 0);
             ChoseMonSpriteSize.localScale = new Vector3(30f, 30f, 0);
             //232.8336 251.4603
             ChoseMonSprite.sprite = MM.allMonster[0].image; ChoseMonSprite.flipX = false;
@@ -286,32 +286,33 @@ public class UIManager : MonoBehaviour
             ChoseMonSPD.text = MM.allMonster[0].m_spd.ToString();
         }else if (tempchose == 1)
         {
-            ChoseMonSpriteSize.localPosition = new Vector3(-438f, 341f,0);
-            ChoseMonSpriteSize.localScale = new Vector3(30f, 27f, 0);
+            ChoseMonSpriteSize.localPosition = new Vector3(0f, -1050f,0);
+            ChoseMonSpriteSize.localScale = new Vector3(40f, 35f, 0);
             //122.544 132.3475
             ChoseMonSprite.sprite = MM.allMonster[1].image;
             ChoseMonSprite.flipX = false;
             ChoseMonName.text = MM.allMonster[1].m_name;
-            ChoseMonBio.text = "This skeleton is form by bones from unknown origin. " +
+            ChoseMonBio.text = "It is no ordinary monster. " +
+                "Flarezard belongs as one of the oldest monster families in the forest." +
                 "Strength provided by the essences of fire, " +
-                "Skeleton is ready to tag along and burn those calories with you with its mighty strength. "; //textbiomonste skeleton
+                "Flarezard is ready to tag along and burn those calories with you with its mighty strength. "; //textbiomonste flarezard
             MonQuotes.color = Color.red;
-            MonQuotes.text = "“Can you see any fat in me?! Of course not! Burn those fat if you want to have a sexy body like me!”";
+            MonQuotes.text = "“Turn it up! Burn it Up! Burn those fat if you want to have a sexy body like me!”";
             ChoseMonHP.text = MM.allMonster[1].m_hp.ToString();
             ChoseMonATK.text = MM.allMonster[1].m_atk.ToString();
             ChoseMonSPD.text = MM.allMonster[1].m_spd.ToString();
         }else if (tempchose == 2)
         {
-            ChoseMonSpriteSize.localPosition = new Vector3(-438f, 434f,0);
-            ChoseMonSpriteSize.localScale = new Vector3(120f, 120f, 0);
+            ChoseMonSpriteSize.localPosition = new Vector3(0f, -1050f,0);
+            ChoseMonSpriteSize.localScale = new Vector3(110f, 110f, 0);
             //256.117 276.6064
             ChoseMonSprite.flipX = false;
             ChoseMonSprite.sprite = MM.allMonster[2].image;
             ChoseMonName.text = MM.allMonster[2].m_name;
-            ChoseMonBio.text = "Born in the forest, Mushroom is the spawn of the forest guardian. " +
+            ChoseMonBio.text = "Born in the forest, Leafy is the spawn of the forest guardian. " +
                 "It likes to jump around and has fun with its kin. " +
                 "Through the essences of the grass, it has the hardness of steel and the speed of thunder, " +
-                "or so it thought. Mushroom has prepares itself to grow alongside you."; //textbiomonste mushroom
+                "or so it thought. Leafy have prepared itself to grow alongside you."; //textbiomonste leafy
             MonQuotes.color = Color.green;
             MonQuotes.text = "“You think I’m chubby and smelly?! How about try looking at yourself and smell yourself! Yeah, I know, now run! ”";
             ChoseMonHP.text = MM.allMonster[2].m_hp.ToString();

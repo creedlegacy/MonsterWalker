@@ -45,15 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81b1269253e5f84eb925544d3771267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  Element: {fileID: 0}
-  m_num: 0
-  m_name: 
-  m_type: 0
-  m_hp: 0
-  m_atk: 0
-  m_spd: 0
-  spriteAnimation: {fileID: 0}
+  image: {fileID: 21300000, guid: 65ef5b73a91e6a24a84651583ccaaf01, type: 3}
+  Element: {fileID: 21300028, guid: 272e928a3defc174aa04541c83da3a93, type: 3}
+  m_num: 7
+  m_name: Slime
+  m_type: 2
+  m_hp: 20
+  m_atk: 4
+  m_spd: 3
+  spriteAnimation: {fileID: 9100000, guid: 8ec0b55d7c3623e4da68b906e58df99f, type: 2}
 --- !u!212 &6571698763152739397
 SpriteRenderer:
   m_ObjectHideFlags: 0
