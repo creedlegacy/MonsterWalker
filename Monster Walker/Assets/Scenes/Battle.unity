@@ -4405,18 +4405,18 @@ MonoBehaviour:
     - Mournbeing
     - Nethermirage
     - 'The Jagged Weirdo '
-    - Tony Stark
-    - N00bM4st3r69
+    - Ebony Fire
+    - Cursed Stone
     - 'The Horrible Entity '
     - Stonemorph
     - Kazuya
     - Nina
     - Jeff
-    - El Jeffe
-    - Roman
+    - Angry Being
+    - Lazy Morph
     - Janetty
-    - Kevin Nash
-    - Mario
+    - Forgotten Hero
+    - Heat Borne
     - Dreambeast
     - Pepe
     - Night
@@ -4424,13 +4424,13 @@ MonoBehaviour:
     - Cloud
     - Tidus
     - Morgana
-    - Teddy
+    - Gilgamesh
     - Squall
-    - WhatIsThis?!
+    - Haevenly Abyss
     - Abyssfoot
     - Wispfigure
-    - Haunthand
-    - Bob
+    - Grass Dweller
+    - Liquid Snake
     EM: {fileID: 1727772656}
     EnemyAnimator: {fileID: 1727772655}
     EnemyLevel: {fileID: 1556859662}
