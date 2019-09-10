@@ -44,14 +44,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i_Sprite: {fileID: 21300536, guid: 272e928a3defc174aa04541c83da3a93, type: 3}
-  i_name: Diamond of Nothing
+  i_name: Power Diamond
   i_type: 2
   Effect1: 0
   Effect2: 0
-  price: 999999999
-  i_hp: 999999
-  i_atk: 999999
-  i_spd: 999999
+  price: 35000
+  i_hp: 30
+  i_atk: 10
+  i_spd: 10
   i_bio: Literally nothing.
   IsFree: 0
   IsUnlocked: 0

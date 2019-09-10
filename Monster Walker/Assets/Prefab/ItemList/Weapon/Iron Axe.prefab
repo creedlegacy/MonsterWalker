@@ -48,10 +48,10 @@ MonoBehaviour:
   i_type: 0
   Effect1: 0
   Effect2: 0
-  price: 3000
+  price: 7000
   i_hp: 0
   i_atk: 8
-  i_spd: 0
+  i_spd: 2
   i_bio: An ordinary iron axe. Weapon suitable for those who seek strenght.
   IsFree: 0
   IsUnlocked: 0

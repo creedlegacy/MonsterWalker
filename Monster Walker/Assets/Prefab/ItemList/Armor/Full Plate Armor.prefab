@@ -48,7 +48,7 @@ MonoBehaviour:
   i_type: 1
   Effect1: 0
   Effect2: 0
-  price: 5000
+  price: 7000
   i_hp: 30
   i_atk: 0
   i_spd: -2
