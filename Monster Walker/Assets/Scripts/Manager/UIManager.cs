@@ -874,7 +874,11 @@ public class UIManager : MonoBehaviour
 
     void ShopClosed() {
         SM.MusicSource.Stop();
-        AS.MusicSource.Play();
+        if (AS.MusicSource.isPlaying == false)
+        {
+            AS.MusicSource.Play();
+        }
+
     }
 
     void PlayExplore() {

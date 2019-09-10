@@ -179,35 +179,21 @@ public class BattleScript : MonoBehaviour
         #region EnemyAllocation
         if (!PlayerWin)
         {
-            if (EC.EM.EMS.Num == 1) //skele
+            if (EC.EM.EMS.Num == 7 || EC.EM.EMS.Num == 8 || EC.EM.EMS.Num == 9) //LEAFY, FLAREZARD, SLIME
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 10.4f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 12.8f, 0);
                 EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-            else if (EC.EM.EMS.Num == 0)
-            {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 0.1f, 0);
 
-            }
-            else if (EC.EM.EMS.Num == 2)
+            if (EC.EM.EMS.Num == 11 || EC.EM.EMS.Num == 12) //EARTH GOLEM + WATER GOLEM
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 0.9f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 7.5f, 0);
+            }
+            else if (EC.EM.EMS.Num == 10) //MAGMA GOLEM
+            {
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 7.5f, 0);
+                EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
 
-            }
-            else if (EC.EM.EMS.Num == 3)
-            {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 13f, 0);
-                EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
-            }
-            else if (EC.EM.EMS.Num == 4)
-            {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 4f, 0);
-                EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
-            }
-            else if (EC.EM.EMS.Num == 5)
-            {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 4f, 0);
-                EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
             }
 
         }
@@ -326,7 +312,7 @@ public class BattleScript : MonoBehaviour
     void PrepareForEnemy() {
         int RM = Random.Range(0, MM.allMonster.Count);
         EC.EM.EMS.monster = MM.allMonster[RM];
-        EC.EM.EMS.Num = RM;
+        EC.EM.EMS.Num = MM.allMonster[RM].m_num;
         EC.EnemyAnimator.runtimeAnimatorController = MM.allMonster[RM].spriteAnimation;
         EC.MonNum = MM.allMonster[RM].m_num;
         int RN = Random.Range(0, EC.ManyName.Count);
