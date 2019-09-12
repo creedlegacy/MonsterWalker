@@ -80,7 +80,19 @@ public class Monster : MonoBehaviour
 
             OM.NickName = PlayerPrefs.GetString("monName");
             OM.Level = 1; PlayerPrefs.SetInt("monLvl", 1);
-            OM.Element = MM.allMonster[OM.monster.m_num - 4].Element;
+            if (OM.monster.m_num == 9)
+            {
+                OM.Element = MM.allMonster[0].Element;
+            }
+            else if (OM.monster.m_num == 8)
+            {
+                OM.Element = MM.allMonster[1].Element;
+            }
+            else if (OM.monster.m_num == 7)
+            {
+                OM.Element = MM.allMonster[2].Element;
+            }
+
             OM.hp = OM.monster.m_hp; PlayerPrefs.SetInt("monHP", OM.monster.m_hp);
             OM.atk = OM.monster.m_atk; PlayerPrefs.SetInt("monAtk", OM.monster.m_atk);
             OM.spd = OM.monster.m_spd; PlayerPrefs.SetInt("monSpd", OM.monster.m_spd);
@@ -159,7 +171,19 @@ public class Monster : MonoBehaviour
                 }
             }
 
-            OM.Element = MM.allMonster[OM.monster.m_num - 4].Element;
+            if (OM.monster.m_num == 9)
+            {
+                OM.Element = MM.allMonster[0].Element;
+            }
+            else if (OM.monster.m_num == 8)
+            {
+                OM.Element = MM.allMonster[1].Element;
+            }
+            else if (OM.monster.m_num == 7)
+            {
+                OM.Element = MM.allMonster[2].Element;
+            }
+
             OM.NickName = PlayerPrefs.GetString("monName");
             OM.Level = PlayerPrefs.GetInt("monLvl");
             OM.hp = PlayerPrefs.GetInt("monHP");

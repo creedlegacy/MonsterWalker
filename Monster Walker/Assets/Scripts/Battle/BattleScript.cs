@@ -187,11 +187,11 @@ public class BattleScript : MonoBehaviour
 
             if (EC.EM.EMS.Num == 11 || EC.EM.EMS.Num == 12) //EARTH GOLEM + WATER GOLEM
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 7.5f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 9.8f, 0);
             }
             else if (EC.EM.EMS.Num == 10) //MAGMA GOLEM
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 7.5f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 9.8f, 0);
                 EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
 
             }
