@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 0}
-  Element: {fileID: 0}
+  Element: {fileID: 21300124, guid: 272e928a3defc174aa04541c83da3a93, type: 3}
   m_num: 10
   m_name: MagmaGolem
   m_type: 0
