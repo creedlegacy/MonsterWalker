@@ -51,8 +51,8 @@ MonoBehaviour:
   m_name: Water Golem
   m_type: 2
   m_hp: 30
-  m_atk: 3
-  m_spd: 3
+  m_atk: 4
+  m_spd: 4
   spriteAnimation: {fileID: 9100000, guid: b3d6dc6d52ced7f4cad0e3e54a4bb1ea, type: 2}
 --- !u!212 &1167787828720358369
 SpriteRenderer:
