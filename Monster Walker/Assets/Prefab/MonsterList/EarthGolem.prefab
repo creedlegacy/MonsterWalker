@@ -51,7 +51,7 @@ MonoBehaviour:
   m_name: EarthGolem
   m_type: 1
   m_hp: 21
-  m_atk: 3
+  m_atk: 2
   m_spd: 9
   spriteAnimation: {fileID: 9100000, guid: 481e441a308773346bd86c46aeb8e4fa, type: 2}
 --- !u!212 &3852924897952976776

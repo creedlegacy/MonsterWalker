@@ -51,8 +51,8 @@ MonoBehaviour:
   m_name: MagmaGolem
   m_type: 0
   m_hp: 25
-  m_atk: 8
-  m_spd: 3
+  m_atk: 9
+  m_spd: 1
   spriteAnimation: {fileID: 9100000, guid: 83bb09e0f34e8934ca226c4e1d84f015, type: 2}
 --- !u!212 &8158535146504096658
 SpriteRenderer:
