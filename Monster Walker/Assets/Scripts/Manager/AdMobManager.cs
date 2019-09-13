@@ -14,25 +14,26 @@ public class AdMobManager : MonoBehaviour
     private BattleScript bs = new BattleScript();
     private PedometerU.Tests.ExploreStep es = new PedometerU.Tests.ExploreStep();
 
-    //real appid ca-app-pub-4306238078188379~5897581980
-    [SerializeField] private string appID = "ca-app-pub-3940256099942544~3347511713";
+    //real appid ca-app-pub-9695865045103919~8512822793
+    //testing app id ca-app-pub-3940256099942544~3347511713
+    [SerializeField] private string appID = "ca-app-pub-9695865045103919~8512822793";
     
 
     private bool videoAdClosed;
     //hide panel
     public GameObject ResultPanel,RewardPanel;
     public int counter1, counter2,counter3;
-   
+
 
     //real ads
-    //private string bannerID = "ca-app-pub-4306238078188379/2373269949";
-    //private string interstitialAdID = "ca-app-pub-4306238078188379/1463512955";
-    //private string videoAdID = "ca-app-pub-4306238078188379/4806139397";
+    private string bannerID = "ca-app-pub-9695865045103919/4573577787";
+    private string interstitialAdID = "ca-app-pub-9695865045103919/2791939863";
+    private string videoAdID = "ca-app-pub-9695865045103919/8782633144";
 
-    //test ads
-    private string bannerID = "ca-app-pub-3940256099942544/6300978111";
-    private string interstitialAdID = "ca-app-pub-3940256099942544/1033173712";
-    private string videoAdID = "ca-app-pub-3940256099942544/5224354917";
+    ////test ads
+    //private string bannerID = "ca-app-pub-3940256099942544/6300978111";
+    //private string interstitialAdID = "ca-app-pub-3940256099942544/1033173712";
+    //private string videoAdID = "ca-app-pub-3940256099942544/5224354917";
 
     private void Awake()
     {
