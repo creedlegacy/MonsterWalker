@@ -181,17 +181,25 @@ public class BattleScript : MonoBehaviour
         {
             if (EC.EM.EMS.Num == 7 || EC.EM.EMS.Num == 8 || EC.EM.EMS.Num == 9) //LEAFY, FLAREZARD, SLIME
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 12.8f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 12.6f, 0);
                 EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
             }
 
-            if (EC.EM.EMS.Num == 11 || EC.EM.EMS.Num == 12) //EARTH GOLEM + WATER GOLEM
+            if (EC.EM.EMS.Num == 11) //EARTH GOLEM 
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 9.8f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 12.3f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localScale = new Vector3(2f, 2f, 0);
+            }
+            else if (EC.EM.EMS.Num == 12) //WATER GOLEM
+            {
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 15.4f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localScale = new Vector3(2f, 2f, 0);
+
             }
             else if (EC.EM.EMS.Num == 10) //MAGMA GOLEM
             {
-                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 9.8f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localPosition = new Vector3(13.6f, 12.3f, 0);
+                EC.EnemyObject.GetComponent<Transform>().localScale = new Vector3(2f, 2f, 0);
                 EC.EnemyObject.GetComponent<SpriteRenderer>().flipX = true;
 
             }

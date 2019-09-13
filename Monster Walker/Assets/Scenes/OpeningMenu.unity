@@ -1639,11 +1639,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Credits:\n\nAPI:\n- Yusuf Olokoba: Pedometer API\n\nART:\n- Stevani Willyanto:
-    Environment and Character Art\n- ChrisOelmueller & stubb: UIReal-time strategy
-    GUI / HUD elements\n- adwitr: Health Bar Asset Pack & Health Bar Asset Pack 2\n-
-    shikashis: Shikashis Fantasy Icon Pack\n- Ren'Py: UI Parchment\n\nMUSIC & SFX:\n-
-    playonloop & Royalty Free Music\n\nCreated by:\n- Questionable Games:\n\t- Ervan\n\t-
-    Ferrel\n\t- Franco\n\n"
+    Environment and Character Art\n\nFree Art Assets:\n- ChrisOelmueller & stubb:
+    UIReal-time strategy GUI / HUD elements\n- adwitr: Health Bar Asset Pack & Health
+    Bar Asset Pack 2\n- shikashis: Shikashis Fantasy Icon Pack\n- Ren'Py: UI Parchment\n\nMUSIC
+    & SFX:\n- playonloop & Royalty Free Music\n\nCreated by:\n- Questionable Games:\n\t-
+    Ervan\n\t- Ferrel\n\t- Franco\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5dfdb930347b65148809ef9c08b8e42e, type: 2}
   m_sharedMaterial: {fileID: 21120969195956746, guid: 5dfdb930347b65148809ef9c08b8e42e,
@@ -2463,6 +2463,8 @@ MonoBehaviour:
   monLevel: {fileID: 0}
   monExp: {fileID: 0}
   playGold: {fileID: 0}
+  AS: {fileID: 0}
+  SM: {fileID: 0}
   MusicSlider: {fileID: 0}
   SFXSlider: {fileID: 0}
   SettingMenu: {fileID: 0}

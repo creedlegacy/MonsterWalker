@@ -4405,7 +4405,7 @@ MonoBehaviour:
     - Mournbeing
     - Nethermirage
     - 'The Jagged Weirdo '
-    - Ebony Fire
+    - Ebony Jaw
     - Cursed Stone
     - 'The Horrible Entity '
     - Stonemorph
@@ -4416,10 +4416,10 @@ MonoBehaviour:
     - Lazy Morph
     - Janetty
     - Forgotten Hero
-    - Heat Borne
+    - BlackBorne
     - Dreambeast
     - Pepe
-    - Night
+    - Nightly
     - Dimes
     - Cloud
     - Tidus
@@ -4429,8 +4429,8 @@ MonoBehaviour:
     - Haevenly Abyss
     - Abyssfoot
     - Wispfigure
-    - Grass Dweller
-    - Liquid Snake
+    - Forest Dweller
+    - Psycho Beast
     EM: {fileID: 1727772656}
     EnemyAnimator: {fileID: 1727772655}
     EnemyLevel: {fileID: 1556859662}
