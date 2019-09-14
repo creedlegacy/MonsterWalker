@@ -424,6 +424,7 @@ public class UIManager : MonoBehaviour
     #region FooterButton
 
     public void gameToTrain() {
+        ShopClosed();
         PlayTraining();
         Application.LoadLevel("StepCounter");
     }
@@ -431,6 +432,7 @@ public class UIManager : MonoBehaviour
     public void StatusClick() {
         if (SUI.StatusShown == false)
         {
+            SUI.BattleBtnWarning.SetActive(false);
             SUI.StatusShown = true;
             SUI.ShopShown = false;
             ShowStatus();
@@ -457,6 +459,7 @@ public class UIManager : MonoBehaviour
     {
         if (SUI.ShopShown == false)
         {
+            SUI.BattleBtnWarning.SetActive(false);
             PlayShop();
             SUI.ShopShown = true;
             SUI.StatusShown = false;
@@ -496,6 +499,7 @@ public class UIManager : MonoBehaviour
     }
 
     public void ToExplore() {
+        ShopClosed();
         PlayExplore();
         PlayerPrefs.SetInt("m_current_hp", SUI.NOWHP);
         PlayerPrefs.SetInt("m_current_spd", SUI.NOWSPD);
@@ -504,8 +508,12 @@ public class UIManager : MonoBehaviour
     }
 
     public void ToBattle() {
+        ShopClosed();
         if (TicketManager.instance.TICKET <= 0)
         {
+            SUI.StatusShown = false;
+            SUI.ShopShown = false;
+            CloseShop();
             StartCoroutine(BattleWarningBtnShow());
         }
         else
