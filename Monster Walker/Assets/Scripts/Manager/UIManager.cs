@@ -135,7 +135,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AS.MusicSource.volume = PlayerPrefs.GetFloat("MusicSetting", 1f);
+        AS.MusicSource.volume = SM.MusicSource.volume = PlayerPrefs.GetFloat("MusicSetting", 1f);
         AS.SFXSource.volume = PlayerPrefs.GetFloat("SoundSetting", 1f);
         if (Application.loadedLevelName == "GameScreen")
         {
@@ -225,7 +225,7 @@ public class UIManager : MonoBehaviour
                 SoundPercentage.text = "0%";
             }
 
-            AS.MusicSource.volume = (float)MusicSlider.value;
+            AS.MusicSource.volume = SM. MusicSource.volume = (float)MusicSlider.value;
             AS.SFXSource.volume = (float)SFXSlider.value;
 
             if (MusicSlider.value >= MusicSlider.value || MusicSlider.value <= MusicSlider.value)

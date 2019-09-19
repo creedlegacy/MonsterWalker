@@ -101,13 +101,15 @@ namespace PedometerU.Tests {
                     GameText.GetComponent<Text>().text = "You Found " + GoldRandomGenerate + " Gold!";
                     AccGold += GoldRandomGenerate;
                 }
-                else if (randomNumber2 <= 80)
+                else if (randomNumber2 <= 90)
                 {
                     int monChance = Random.Range(1, M.OM.Level + 3);
                     if (monChance <= M.OM.Level)
                     {
                         GameText.GetComponent<Text>().text = "You defeated a monster!";
                         ExpGain = monChance * 5;
+                        AccExp += ExpGain;
+                        BattleTotal += 1;
                         inst_again = true;
                     }
                     else if(monChance >= M.OM.Level)

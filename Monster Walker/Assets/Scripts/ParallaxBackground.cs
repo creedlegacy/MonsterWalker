@@ -28,109 +28,46 @@ public class ParallaxBackground : MonoBehaviour
 
         if (move == true)
         {
-
             #region Moving Background
-            p1.localPosition += new Vector3(-0.005f, 0, 0);
-            pp1.localPosition += new Vector3(-0.005f, 0, 0);
 
-            p2.localPosition += new Vector3(-0.003f, 0, 0);
-            pp2.localPosition += new Vector3(-0.003f, 0, 0);
+            p6.localPosition += new Vector3(-0.01f, 0, 0);
+            pp6.localPosition += new Vector3(-0.01f, 0, 0);
 
-            p3.localPosition += new Vector3(-0.002f, 0, 0);
-            pp3.localPosition += new Vector3(-0.002f, 0, 0);
-
-            p4.localPosition += new Vector3(-0.001f, 0, 0);
-            pp4.localPosition += new Vector3(-0.001f, 0, 0);
-
-            p5.localPosition += new Vector3(-0.0015f, 0, 0);
-            pp5.localPosition += new Vector3(-0.0015f, 0, 0);
-
-            p6.localPosition += new Vector3(-0.001f, 0, 0);
-            pp6.localPosition += new Vector3(-0.001f, 0, 0);
-
-            p7.localPosition += new Vector3(-0.003f, 0, 0);
-            pp7.localPosition += new Vector3(-0.003f, 0, 0);
+            p7.localPosition += new Vector3(-0.03f, 0, 0);
+            pp7.localPosition += new Vector3(-0.03f, 0, 0);
             #endregion
 
             #region B-Left
-            if (p1.localPosition.x <= -8.09f)
+
+            if (p6.localPosition.x <= -7.53f)
             {
-                p1.localPosition = new Vector3(27.4f, -0.19f, 0);
+                p6.localPosition = new Vector3(25f, -0.13f, 0);
             }
 
-            if (p2.localPosition.x <= -8.09f)
+            if (p7.localPosition.x <= -7.53f)
             {
-                p2.localPosition = new Vector3(27.4f, -0.19f, 0);
-            }
-
-            if (p3.localPosition.x <= -8.09f)
-            {
-                p3.localPosition = new Vector3(27.4f, -0.19f, 0);
-            }
-
-            if (p4.localPosition.x <= -8.09f)
-            {
-                p4.localPosition = new Vector3(27.4f, -0.19f, 0);
-            }
-
-            if (p5.localPosition.x <= -8.09f)
-            {
-                p5.localPosition = new Vector3(27.4f, -0.19f, 0);
-            }
-
-            if (p6.localPosition.x <= -8.09f)
-            {
-                p6.localPosition = new Vector3(27.4f, -0.19f, 0);
-            }
-
-            if (p7.localPosition.x <= -8.09f)
-            {
-                p7.localPosition = new Vector3(27.4f, -0.19f, 0);
+                p7.localPosition = new Vector3(25f, 0.22f, 0);
             }
             #endregion
 
             #region B-Right
-            if (pp1.localPosition.x <= -26.1f)
+
+
+            if (pp6.localPosition.x <= -25.415f)
             {
-                pp1.localPosition = new Vector3(9.4f, -0.19f, 0);
+                pp6.localPosition = new Vector3(7f, -0.19f, 0);
             }
 
-            if (pp2.localPosition.x <= -26.1f)
+            if (pp7.localPosition.x <= -25.415f)
             {
-                pp2.localPosition = new Vector3(9.4f, -0.19f, 0);
-            }
-
-            if (pp3.localPosition.x <= -26.1f)
-            {
-                pp3.localPosition = new Vector3(9.4f, -0.19f, 0);
-            }
-
-            if (pp4.localPosition.x <= -26.1f)
-            {
-                pp4.localPosition = new Vector3(9.4f, -0.19f, 0);
-            }
-
-            if (pp5.localPosition.x <= -26.1f)
-            {
-                pp5.localPosition = new Vector3(9.4f, -0.19f, 0);
-            }
-
-            if (pp6.localPosition.x <= -26.1f)
-            {
-                pp6.localPosition = new Vector3(9.4f, -0.19f, 0);
-            }
-
-            if (pp7.localPosition.x <= -26.1f)
-            {
-                p7.localPosition = new Vector3(9.4f, -0.19f, 0);
+                pp7.localPosition = new Vector3(7f, 0.16f, 0);
             }
             #endregion
 
         }
 
 
+
     }
-
-
-
+    
 }
