@@ -30,11 +30,11 @@ public class ParallaxBackground : MonoBehaviour
         {
             #region Moving Background
 
-            p6.localPosition += new Vector3(-0.001f, 0, 0);
-            pp6.localPosition += new Vector3(-0.001f, 0, 0);
+            p6.localPosition += new Vector3(-0.005f, 0, 0);
+            pp6.localPosition += new Vector3(-0.005f, 0, 0);
 
-            p7.localPosition += new Vector3(-0.003f, 0, 0);
-            pp7.localPosition += new Vector3(-0.003f, 0, 0);
+            p7.localPosition += new Vector3(-0.01f, 0, 0);
+            pp7.localPosition += new Vector3(-0.01f, 0, 0);
             #endregion
 
             #region B-Left
@@ -55,12 +55,12 @@ public class ParallaxBackground : MonoBehaviour
 
             if (pp6.localPosition.x <= -25.415f)
             {
-                pp6.localPosition = new Vector3(7f, -0.19f, 0);
+                pp6.localPosition = new Vector3(7.1f, -0.19f, 0);
             }
 
             if (pp7.localPosition.x <= -25.415f)
             {
-                pp7.localPosition = new Vector3(7f, 0.16f, 0);
+                pp7.localPosition = new Vector3(7.1f, 0.16f, 0);
             }
             #endregion
 
